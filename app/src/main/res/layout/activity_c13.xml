@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".C13">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="55dp"
+        android:padding="20dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/c13_support"
+            android:textSize="25sp"
+            android:layout_marginBottom="10dp"
+            android:textColor="?android:attr/textColorPrimary"
+            android:textAllCaps="true"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_gravity="center"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/c13_supportEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill"
+                android:textSize="15sp"
+                tools:text="xyz123@gmail.com"
+                android:gravity="right"
+                android:layout_marginTop="20dp"
+                android:layout_toLeftOf="@+id/c13_spportImg"
+                android:drawablePadding="5dp"
+                android:drawableEnd="@drawable/c01_c02_c03_c04_email"/>
+            <TextView
+                android:id="@+id/c13_supportPhoneNo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="fill"
+                android:textSize="15sp"
+                android:gravity="right"
+                tools:text="9876543210"
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/c13_supportEmail"
+                android:layout_toLeftOf="@+id/c13_spportImg"
+                android:drawablePadding="5dp"
+                android:drawableEnd="@drawable/c12_phone"/>
+
+            <ImageView
+                android:id="@+id/c13_spportImg"
+                android:layout_width="170dp"
+                android:layout_height="170dp"
+                android:src="@drawable/c13_support2"
+                android:scaleType="center"
+                android:padding="10dp"
+                android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/c13_from"
+            android:textSize="20dp"
+            android:gravity="left" />
+
+        <!--        <LinearLayout-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:padding="10dp"-->
+        <!--            android:background="@drawable/c13_bg_round">-->
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edit_From"
+            android:padding="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/c13_bg_round"/>
+
+        <!--        </LinearLayout>-->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/c13_subject"
+            android:textSize="20dp"
+            android:layout_margin="5dp"
+            android:gravity="left" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/edit_subject"
+            android:padding="10dp"
+            android:background="@drawable/c13_bg_round"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/c13_message"
+            android:textSize="20dp"
+            android:layout_margin="5dp"
+            android:gravity="left" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:id="@+id/edit_Message"
+            android:padding="10dp"
+            android:gravity="start"
+            android:layout_gravity="center"
+            android:background="@drawable/c13_bg_round"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/bt_send"
+            android:text="@string/c13_send"
+            android:textColor="?android:attr/textColorPrimary"
+            android:layout_margin="10dp"
+            android:layout_gravity="center"
+            android:background="@drawable/c13_bg_round"
+            />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

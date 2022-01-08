@@ -1,3 +1,168 @@
 <resources>
-    <string name="app_name">RentSell</string>
+    <string name="app_name">Rentsell</string>
+    <string name="navbar_title">RentSell</string>
+
+    <!-- ===================   C01   =================== -->
+
+    <string name="c01_email_phone">Email/PhoneNo</string>
+    <string name="c01_password">Password</string>
+    <string name="c01_confirm_password">Confirm Password</string>
+    <string name="c01_sign_up">Sign Up</string>
+    <string name="c01_sign_in">Sign In</string>
+    <string name="c01_forget_password">Forget Password?</string>
+    <string name="c01_do_not_have_account">Do not have account?  </string>
+    <string name="c01_new_account">new account</string>
+    <string name="c01_login">Login</string>
+
+    <!-- ===================   C02   =================== -->
+
+    <string name="c02_create_account">Create Account</string>
+    <string name="c02_enter_details">Please fill the details</string>
+    <string name="c02_password">Password</string>
+    <string name="c02_confirm_password">Confirm Password</string>
+    <string name="c02_name">Name</string>
+    <string name="c02_email_phone">Email/Phone</string>
+    <string name="c02_sign_up">Sign Up</string>
+
+    <!-- ===================  C04 ============ -->
+    <string name="c04_name">Enter your Email/Mobile </string>
+    <string name="c04_enter_OTP">Enter OTP</string>
+    <string name="c04_send_OTP">Send OTP</string>
+
+    <string name="c04_verify_OTP">Verify OTP</string>
+    <string name="c04_Forget_password">Forget Password</string>
+    <string name="c04_create_new">Create New One</string>
+
+    <string name="c04_cp_password">Enter New Password</string>
+    <string name="c04_cp_confirm_password"> Confirm Password</string>
+    <string name="c04_cp_submit">Submit</string>
+    <!-- ===================   C03   =================== -->
+    <string name="c03_change_password">Change Password</string>
+    <string name="c03_email_num">Email / Number</string>
+    <string name="c03_oldPass">Old Password</string>
+    <string name="c03_verifyBtn">Verify</string>
+    <string name="c03_newPass">New Password</string>
+    <string name="c03_confirmPass">Confirm Password</string>
+    <string name="c03_change_password_info">Please enter Email/Phone &amp; Old password </string>
+
+    <!-- ===================   C11   =================== -->
+    <!--&gt;>>>>>> 480278c8dba3b786a01b1ee28afd54e740bb60b6-->
+
+    <string name="c11_close">Close</string>
+    <string name="c11_open">Open</string>
+    <string name="c11_home">Home</string>
+    <string name="c11_manageProperty">Manage Property</string>
+    <string name="c11_profile">Profile</string>
+    <string name="c11_support">Support</string>
+    <string name="c11_logout">Logout</string>
+    <string name="c11_dialogbox_logout">Logout</string>
+    <string name="c11_dialogbox_cancel">Cancel</string>
+    <string name="c11_logout_messsage">Do you want to logout,are you sure?</string>
+    <string name="c11_navHeaderName">Name</string>
+    <string name="C11_C12_C13_AppBar_Navgation_support">Support</string>
+    <string name="C11_C12_C13_AppBar_Navgation_copyright">Copyright</string>
+    <!-- ===================   C11_F1 & C11_F2  =================== -->
+
+    <string name="c11f1_c11f2_buy_sell">Buy/Sell</string>
+    <string name="c11f1_c11f2_search">Search</string>
+    <string name="c11f1_c11f2_rent">Rent</string>
+
+
+    <!-- ===================   C11_Filter  =================== -->
+
+    <string name="c11_filter_filter">Filter</string>
+    <string name="c11_filter_category">Category</string>
+    <string name="c11_filter_reset">Reset</string>
+    <string name="c11_filter_property_type">Property Type</string>
+    <string name="c11_filter_price">Price</string>
+    <string name="c11_filter_show_result">Show Result</string>
+    <string name="c11_filter_rent">Rent</string>
+    <string name="c11_filter_buy_sell">Buy/Sell</string>
+    <array name="c11_initial_slider_values">
+        <item>0.0</item>
+        <item>100.0</item>
+    </array>
+
+    <!-- ===================   C11_Sort  =================== -->
+
+    <string name="c11_sort_sort">Sort By</string>
+    <string name="c11_sort_newest">Newest</string>
+    <string name="c11_sort_oldest">Oldest</string>
+    <string name="c11_sort_low_high">Low to High Price</string>
+    <string name="c11_sort_high_low">High to Low Price</string>
+
+    <!-- ===================   C12   =================== -->
+
+    <string name="c12_update">Update</string>
+    <string name="c12_delete">Delete</string>
+    <string name="c12_profile">Profile</string>
+    <string name="c12_name">Name</string>
+    <string name="c12_email">Email</string>
+    <string name="c12_phone">Phone</string>
+    <string name="c12_reset_password">Change Password?</string>
+
+    <!-- ===================   C13  =================== -->
+
+    <string name="c13_from">From : </string>
+    <string name="c13_subject">Subject</string>
+    <string name="c13_send">Send</string>
+    <string name="c13_message">Message</string>
+    <string name="c13_support">Support</string>
+
+
+    <!-- ===================   C21  =================== -->
+
+    <string name="c21_amount">Amount</string>
+    <string name="c21_name">Name</string>
+    <string name="c21_ownername">Owner Name</string>
+    <string name="c21_type">Type(Rent / Sell)</string>
+    <string name="c21_tidtype">Type of Residency</string>
+    <string name="c21_others">Description</string>
+    <string name="c21_date">Date</string>
+    <string name="c21_adress">Address</string>
+    <string name="c21_location">Location</string>
+    <string name="c21_ownerInfo">Owner Information</string>
+    <!-- ===================   C31  =================== -->
+
+    <string name="c31_your_property">Your Property </string>
+    <!--    c31_vertical-->
+    <string name="c31_sell_fast">Sell Faster Now</string>
+
+    <!-- ===================   C32  =================== -->
+    <string name="c32_yourProp">Your Property </string>
+    <string name="c32_type">Type </string>
+    <string name="c32_typeRes">Residency Type </string>
+    <string name="c32_uname">Owner Name</string>
+    <string name="c32_property_name">Property Name</string>
+    <string name="c32_number">Number</string>
+    <string name="c32_land_add">Land Address</string>
+    <string name="c32_details">Details</string>
+    <string name="c32_desc">Description</string>
+    <string name="c32_Amount">Amount</string>
+    <string name="c32_sold">Sold</string>
+    <string name="c32_sell_fast">Sell Faster Now</string>
+    <string name="c32_delete">Delete</string>
+    <string name="c32_update">Update</string>
+    <string name="c32_cancel">Cancel</string>
+    <!-- ===================   C33  =================== -->
+
+    <string name="c33_contact_info_label">Contact Information </string>
+    <string name="c33_property_info_label">Property Information </string>
+    <string name="c33_general_info_label">General Information </string>
+    <string name="c33_addressTxt">Address</string>
+    <string name="c33_addr1_hint">Address Line 1*</string>
+    <string name="c33_addr2_hint">Address Line 2</string>
+    <string name="c33_addr_invalid_error">Address cannot contain invalid characters</string>
+    <string name="c33_atleastone">Fill at least one address field</string>
+    <string name="c33_add_img">Add Image</string>
+
+    <string name="patient_city_label">City</string>
+    <string name="patient_postal_label">Postal Code</string>
+    <string name="patient_state_label">State</string>
+    <string name="patient_country_label">Country</string>
+    <string name="alphanumeric_postal_code">ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789 </string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
 </resources>

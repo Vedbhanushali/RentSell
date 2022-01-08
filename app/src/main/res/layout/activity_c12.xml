@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".C12">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--        <com.google.android.material.appbar.MaterialToolbar-->
+        <!--            android:id="@+id/c12_menubar"-->
+        <!--            style="@style/Widget.MaterialComponents.Toolbar.Primary"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="?attr/actionBarSize"-->
+        <!--            android:backgroundTint="@color/blue_500"-->
+        <!--            app:title="@string/navbar_title" />-->
+
+        <!--        <ImageView-->
+        <!--            android:id="@+id/c02_registerImage"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="310dp"-->
+        <!--            android:layout_alignParentTop="true"-->
+        <!--            android:layout_marginTop="55dp"-->
+        <!--            android:background="@color/white"-->
+        <!--            android:scaleType="centerCrop"-->
+        <!--            android:src="@drawable/c02_signup_img"-->
+        <!--            tools:ignore="MissingConstraints" />-->
+        <!--        <TextView-->
+        <!--            android:id="@+id/c12_profileTxt"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:text="@string/c12_profile"-->
+        <!--            android:paddingRight="16dp"-->
+        <!--            android:paddingLeft="16dp"-->
+        <!--            android:gravity="center"-->
+        <!--            android:layout_marginTop="65dp"-->
+        <!--            android:layout_marginBottom="10dp"-->
+        <!--            android:layout_gravity="center"-->
+        <!--            android:textSize="40dp"-->
+        <!--            android:textStyle="bold"-->
+        <!--            android:textColor="?android:attr/textColorPrimaryNoDisable"-->
+        <!--            android:layout_alignParentTop="true" />-->
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="65dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:orientation="vertical"
+            android:layout_centerVertical="true">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                app:cardCornerRadius="73dp"
+                android:layout_gravity="center"
+                android:layout_marginRight="0dp"
+                android:layout_marginTop="10dp">
+                <com.airbnb.lottie.LottieAnimationView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    app:lottie_rawRes="@raw/profile_animation"
+                    android:layout_gravity="center"
+                    android:paddingLeft="5dp"
+                    android:paddingTop="5dp"
+                    android:scaleType="centerCrop"
+                    app:lottie_autoPlay="true"
+                    app:lottie_loop="true"
+                    />
+                <!--                <ImageView-->
+                <!--                    android:id="@+id/c12_imageViewUser"-->
+                <!--                    android:layout_width="match_parent"-->
+                <!--                    android:layout_height="match_parent"-->
+                <!--                    android:layout_gravity="center"-->
+                <!--                    android:background="#CAE1FF"-->
+                <!--                    android:padding="5dp"-->
+                <!--                    android:scaleType="centerCrop"-->
+                <!--                    android:src="@drawable/c12_profile" />-->
+            </androidx.cardview.widget.CardView>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/c02_editTextNameLayout"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="15dp"
+                android:hint="@string/c02_name"
+                android:textColorHint="?android:attr/textColorPrimary"
+                app:boxCornerRadiusBottomEnd="10dp"
+                app:boxCornerRadiusBottomStart="10dp"
+                app:boxCornerRadiusTopEnd="10dp"
+                app:boxCornerRadiusTopStart="10dp"
+                app:endIconMode="clear_text"
+                app:startIconDrawable="@drawable/c12_profile">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/c12_editTextName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:textColor="?android:attr/textColorPrimary"
+                    android:textSize="20sp"
+                    android:focusable="false" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/c02_editTextEmailLayout"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="15dp"
+                android:hint="@string/c12_email"
+                android:textColorHint="?android:attr/textColorPrimary"
+                app:boxCornerRadiusBottomEnd="10dp"
+                app:boxCornerRadiusBottomStart="10dp"
+                app:boxCornerRadiusTopEnd="10dp"
+                app:boxCornerRadiusTopStart="10dp"
+                app:endIconMode="clear_text"
+                app:startIconDrawable="@drawable/c01_c02_c03_c04_email">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/c12_editTextEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:textColor="?android:attr/textColorPrimary"
+                    android:textSize="20sp"
+                    android:focusable="false" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/c02_editTextPasswordLayout"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="15dp"
+                android:hint="@string/c12_phone"
+                android:textColorHint="?android:attr/textColorPrimary"
+                app:boxCornerRadiusBottomEnd="10dp"
+                app:boxCornerRadiusBottomStart="10dp"
+                app:boxCornerRadiusTopEnd="10dp"
+                app:boxCornerRadiusTopStart="10dp"
+                app:endIconMode="clear_text"
+                app:startIconDrawable="@drawable/c12_phone">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/c12_editTextPhone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:textColor="?android:attr/textColorPrimary"
+                    android:textSize="20sp"
+                    android:focusable="false"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+            <TextView
+                android:id="@+id/c12_buttonChange"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/c12_reset_password"
+                android:drawableLeft="@drawable/c01_info"
+                android:drawableTint="?android:attr/colorPrimary"
+                android:textColor="?android:attr/colorPrimary"
+                android:layout_gravity="right"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="10dp"/>
+
+
+            <Button
+                android:id="@+id/c12_buttonUpdate"
+                android:layout_margin="20dp"
+                android:textSize="20sp"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/c01_c02_c03_c04_c11_four_rounded_corner"
+                android:text="@string/c12_update" />
+            <Button
+                android:id="@+id/c12_buttonDelete"
+                android:layout_margin="20dp"
+                android:textSize="20sp"
+                android:background="@drawable/c01_c02_c03_c04_c11_four_rounded_corner"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/c12_delete" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

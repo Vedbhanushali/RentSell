@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".C11_F2">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <EditText
+            android:id="@+id/c11_f2_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:padding="10dp"
+            android:background="@drawable/c11_square_border"
+            android:hint="Search Here"
+            android:drawableStart="@drawable/c11f1_c11f2_search"
+            android:iconifiedByDefault="false"/>
+        <androidx.coordinatorlayout.widget.CoordinatorLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@id/c11_f2_linearLayout"
+            android:layout_below="@id/c11_f2_search">
+            <!--        <RelativeLayout-->
+            <!--            android:layout_width="match_parent"-->
+            <!--            android:layout_height="wrap_content">-->
+            <com.google.android.material.appbar.AppBarLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fitsSystemWindows="true"
+                android:backgroundTint="?android:attr/textColorPrimaryInverse"
+                android:id="@+id/c11_f2_appbar">
+                <com.google.android.material.appbar.CollapsingToolbarLayout
+                    android:id="@+id/c11_f2_collapsing_toolbar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fitsSystemWindows="true"
+                    app:contentScrim="?attr/colorPrimary"
+                    app:expandedTitleMarginEnd="64dp"
+                    app:expandedTitleMarginStart="48dp"
+                    app:layout_scrollFlags="scroll|snap|exitUntilCollapsed">
+
+                    <androidx.appcompat.widget.Toolbar
+                        android:id="@+id/c11_f2_toolbar"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        app:layout_scrollFlags="scroll|enterAlways" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <!--                    <SearchView-->
+                        <!--                        android:id="@+id/c11_f2_search"-->
+                        <!--                        android:layout_width="match_parent"-->
+                        <!--                        android:layout_height="wrap_content"-->
+                        <!--                        android:layout_margin="10dp"-->
+                        <!--                        android:queryHint="Search Here"-->
+                        <!--                        android:iconifiedByDefault="false"/>-->
+
+
+                        <TextView
+                            android:id="@+id/c11_f2_popularForYou"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Popular for you"
+                            android:textColor="?android:attr/textColorPrimary"
+                            android:layout_margin="10dp"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/c11_f2_recyclerViewHorizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="5dp"
+                            android:orientation="horizontal"
+                            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                            tools:ignore="MissingConstraints"
+                            tools:listitem="@layout/c112a_c113a_horizontal" />
+
+                    </LinearLayout>
+                    <androidx.appcompat.widget.Toolbar
+                        android:layout_width="match_parent"
+                        android:layout_height="?android:attr/actionBarSize"
+                        app:layout_collapseMode="pin"
+                        app:layout_scrollFlags="scroll|enterAlways"/>
+
+                </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+
+            </com.google.android.material.appbar.AppBarLayout>
+
+            <!--            <ImageView-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="160dp"-->
+            <!--                android:layout_alignParentLeft="true"-->
+            <!--                android:layout_alignParentStart="true"-->
+            <!--                android:layout_alignParentTop="true"-->
+            <!--                android:scaleType="fitXY"-->
+            <!--                android:src="@drawable/home1" />-->
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_behavior="@string/appbar_scrolling_view_behavior">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <!--                <ScrollView-->
+                    <!--                    android:layout_width="match_parent"-->
+                    <!--                    android:layout_height="match_parent"-->
+                    <!--                    android:fastScrollEnabled="true"-->
+                    <!--                    android:layout_alignParentTop="true"-->
+                    <!--                    android:layout_alignParentStart="true">-->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                        <TextView
+                            android:id="@+id/c11_f2_recommendForYou"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Recommend for you"
+                            android:textColor="?android:attr/textColorPrimary"
+                            android:layout_margin="10dp"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/c11_f2_recyclerViewVertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="5dp"
+                            android:orientation="vertical"
+                            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                            tools:ignore="MissingConstraints"
+                            tools:listitem="@layout/c112a_c113a_vertical" />
+
+                    </LinearLayout>
+                    <!--                </ScrollView>-->
+
+                </RelativeLayout>
+
+            </androidx.core.widget.NestedScrollView>
+            <!--        </RelativeLayout>-->
+
+
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+        <!--    <RelativeLayout-->
+        <!--        android:layout_width="match_parent"-->
+        <!--        android:layout_height="match_parent">-->
+        <!--        <LinearLayout-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="match_parent"-->
+        <!--            android:orientation="vertical">-->
+        <!--            <LinearLayout-->
+        <!--                android:layout_width="match_parent"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:orientation="vertical">-->
+        <!--                <TextView-->
+        <!--                    android:layout_width="wrap_content"-->
+        <!--                    android:layout_height="wrap_content"-->
+        <!--                    android:text="Popular for you"-->
+        <!--                    android:textColor="?android:attr/textColorPrimary"-->
+        <!--                    android:layout_margin="10dp"-->
+        <!--                    android:textSize="20sp"-->
+        <!--                    android:textStyle="bold" />-->
+
+        <!--                <androidx.recyclerview.widget.RecyclerView-->
+        <!--                    android:id="@+id/c11_f2_recyclerViewHorizontal"-->
+        <!--                    android:layout_width="match_parent"-->
+        <!--                    android:layout_height="wrap_content"-->
+        <!--                    android:layout_marginLeft="5dp"-->
+        <!--                    android:orientation="horizontal"-->
+        <!--                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"-->
+        <!--                    tools:ignore="MissingConstraints"-->
+        <!--                    tools:listitem="@layout/c112a_c113a_horizontal" />-->
+
+        <!--            </LinearLayout>-->
+        <!--            <TextView-->
+        <!--                android:layout_width="wrap_content"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:text="Recommend for you"-->
+        <!--                android:textColor="?android:attr/textColorPrimary"-->
+        <!--                android:layout_margin="10dp"-->
+        <!--                android:textSize="20sp"-->
+        <!--                android:textStyle="bold" />-->
+
+        <!--            <androidx.recyclerview.widget.RecyclerView-->
+        <!--                android:id="@+id/c11_f2_recyclerViewVertical"-->
+        <!--                android:layout_width="match_parent"-->
+        <!--                android:layout_height="match_parent"-->
+        <!--                android:layout_marginLeft="5dp"-->
+        <!--                android:orientation="vertical"-->
+        <!--                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"-->
+        <!--                tools:ignore="MissingConstraints"-->
+        <!--                tools:listitem="@layout/c112a_c113a_vertical" />-->
+
+        <!--        </LinearLayout>-->
+        <!--        &lt;!&ndash;        </ScrollView>&ndash;&gt;-->
+
+        <!--        &lt;!&ndash;        <com.google.android.material.tabs.TabLayout&ndash;&gt;-->
+        <!--        &lt;!&ndash;            android:id="@+id/c112_tabLayout"&ndash;&gt;-->
+        <!--        &lt;!&ndash;            android:layout_width="wrap_content"&ndash;&gt;-->
+        <!--        &lt;!&ndash;            android:layout_height="wrap_content"&ndash;&gt;-->
+        <!--        &lt;!&ndash;            android:layout_margin="5dp"&ndash;&gt;-->
+        <!--        &lt;!&ndash;            android:background="@drawable/c11_four_rounded_corner2"&ndash;&gt;-->
+        <!--        &lt;!&ndash;            android:layout_alignParentBottom="true"&ndash;&gt;-->
+        <!--        &lt;!&ndash;            android:layout_alignParentRight="true">&ndash;&gt;-->
+        <!--        &lt;!&ndash;            <com.google.android.material.tabs.TabItem&ndash;&gt;-->
+        <!--        &lt;!&ndash;                android:layout_width="wrap_content"&ndash;&gt;-->
+        <!--        &lt;!&ndash;                android:layout_height="wrap_content"&ndash;&gt;-->
+        <!--        &lt;!&ndash;                android:icon="@drawable/ic_baseline_sort_24"&ndash;&gt;-->
+        <!--        &lt;!&ndash;                />&ndash;&gt;-->
+        <!--        &lt;!&ndash;            <com.google.android.material.tabs.TabItem&ndash;&gt;-->
+        <!--        &lt;!&ndash;                android:layout_width="wrap_content"&ndash;&gt;-->
+        <!--        &lt;!&ndash;                android:layout_height="wrap_content"&ndash;&gt;-->
+        <!--        &lt;!&ndash;                android:icon="@drawable/c11_f2_c113f_filter_list"&ndash;&gt;-->
+        <!--        &lt;!&ndash;                />&ndash;&gt;-->
+
+        <!--        &lt;!&ndash;        </com.google.android.material.tabs.TabLayout>&ndash;&gt;-->
+
+        <!--    </RelativeLayout>-->
+        <LinearLayout
+            android:id="@+id/c11_f2_linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_alignParentBottom="true">
+
+            <TextView
+                android:id="@+id/c11_f2_sortBtn"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="@string/c11_sort_sort"
+                android:padding="10dp"
+                android:textAllCaps="true"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:background="@drawable/c11_square_border"
+                android:drawableLeft="@drawable/ic_baseline_sort_24"/>
+            <TextView
+                android:id="@+id/c11_f2_filterBtn"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="@string/c11_filter_filter"
+                android:padding="10dp"
+                android:textAllCaps="true"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:drawableStart="@drawable/c11f1_c11f2_filter_list"
+                android:background="@drawable/c11_square_border"  />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</FrameLayout>

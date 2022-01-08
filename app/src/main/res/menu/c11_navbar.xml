@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <group android:id="@+id/c11_user_menu"
+        android:visible="true">
+        <item android:id="@+id/c11_navbarHome"
+            android:icon="@drawable/c11_home"
+            app:showAsAction="never"
+            android:title="@string/c11_home" />
+        <item android:id="@+id/c11_navbarProfile"
+            android:icon="@drawable/c11_person_identity"
+            app:showAsAction="never"
+            android:title="@string/c11_profile" />
+        <item android:id="@+id/c11_navbarProperty"
+            android:icon="@drawable/c11_manage_property"
+            app:showAsAction="never"
+            android:title="@string/c11_manageProperty" />
+    </group>
+    <group android:id="@+id/c11_user_menu2">
+    <item android:id="@+id/c11_navbarSupport"
+        android:icon="@drawable/c11_support"
+        app:showAsAction="never"
+        android:title="@string/c11_support" />
+    <item android:id="@+id/c11_navbarLogout"
+        android:icon="@drawable/c11_logout"
+        app:showAsAction="never"
+        android:title="@string/c11_logout" />
+    </group>
+</menu>

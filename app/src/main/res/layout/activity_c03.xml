@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".C03">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <include
+            android:id="@+id/c03_navbar"
+            layout="@layout/c01_c02_c03_c04_navigation_bar"
+            android:layout_alignParentTop="true"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"/>
+        <ImageView
+            android:id="@+id/c03_changePassImage"
+            android:layout_width="match_parent"
+            android:layout_height="310dp"
+            android:layout_below="@id/c03_navbar"
+            android:background="@color/white"
+            android:scaleType="centerCrop"
+            android:src="@drawable/c03_reset" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_margin="10dp"
+            android:background="@drawable/c11_four_rounded_corner2"
+            android:layout_below="@id/c03_changePassImage">
+            <TextView
+                android:id="@+id/c04_forget_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_margin="10dp"
+                android:text="@string/c03_change_password"
+                android:textColor="?android:attr/textColorPrimary"
+                android:textSize="40dp"
+                android:textStyle="bold"
+                android:layout_below="@+id/c03_changePassImage"/>
+
+
+            <!--        <LinearLayout-->
+            <!--            android:layout_width="match_parent"-->
+            <!--            android:layout_height="wrap_content"-->
+            <!--            android:orientation="vertical"-->
+            <!--            android:background="@drawable/c02_two_rounded_corner">-->
+            <!--            <ImageView-->
+            <!--                android:id="@+id/image"-->
+            <!--                android:layout_width="70dp"-->
+            <!--                android:layout_height="70dp"-->
+            <!--                android:layout_marginTop="10dp"-->
+            <!--                android:layout_below="@id/c01_navbar"-->
+            <!--                android:layout_gravity="center"-->
+            <!--                android:scaleType="centerCrop"-->
+            <!--                android:src="@drawable/c03_reset" />-->
+
+            <!--            <TextView-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:text="@string/c03_change_password"-->
+            <!--                android:paddingRight="16dp"-->
+            <!--                android:paddingLeft="16dp"-->
+            <!--                android:gravity="left"-->
+            <!--                android:layout_marginTop="10dp"-->
+            <!--                android:layout_marginLeft="10dp"-->
+            <!--                android:layout_gravity="left"-->
+            <!--                android:textSize="40dp"-->
+            <!--                android:textStyle="bold"-->
+            <!--                android:textColor="?android:attr/textColorPrimaryNoDisable"/>-->
+
+            <!--            <TextView-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:text="@string/c03_change_password_info"-->
+            <!--                android:gravity="left"-->
+            <!--                android:paddingRight="16dp"-->
+            <!--                android:paddingLeft="16dp"-->
+            <!--                android:layout_marginBottom="40dp"-->
+            <!--                android:layout_marginLeft="20dp"-->
+            <!--                android:layout_gravity="left"/>-->
+
+            <!--        </LinearLayout>-->
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/c03_editTextEmailLayout"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="25dp"
+                android:hint="@string/c03_email_num"
+                android:textColorHint="?android:attr/textColorPrimary"
+                app:boxCornerRadiusBottomEnd="10dp"
+                app:boxCornerRadiusBottomStart="10dp"
+                app:boxCornerRadiusTopEnd="10dp"
+                app:boxCornerRadiusTopStart="10dp"
+                app:errorEnabled="true"
+                app:endIconMode="clear_text"
+                app:startIconDrawable="@drawable/c01_c02_c03_c04_email">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/c03_edit_email_num"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:textColor="?android:attr/textColorPrimary" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/c03_editTextOldPassLayout"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:hint="@string/c03_oldPass"
+                android:textColorHint="?android:attr/textColorPrimary"
+                app:boxCornerRadiusBottomEnd="10dp"
+                app:boxCornerRadiusBottomStart="10dp"
+                app:boxCornerRadiusTopEnd="10dp"
+                app:boxCornerRadiusTopStart="10dp"
+                app:errorEnabled="true"
+                app:endIconMode="password_toggle"
+                app:startIconDrawable="@drawable/c01_c02_c03_c04_password_lock">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/c03_editOldPass"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textPassword"
+                    android:textColor="?android:attr/textColorPrimary"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <Button
+                android:id="@+id/c03_verify"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:paddingLeft="25dp"
+                android:paddingBottom="10dp"
+                android:paddingRight="25dp"
+                android:paddingTop="10dp"
+                android:background="@drawable/c01_c02_c03_c04_c11_four_rounded_corner"
+                android:layout_gravity="center"
+                android:text="@string/c03_verifyBtn"
+                android:visibility="visible"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/c03_editTextNewPasswordLayout"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:hint="@string/c03_newPass"
+                android:textColorHint="?android:attr/textColorPrimary"
+                app:boxCornerRadiusBottomEnd="10dp"
+                app:boxCornerRadiusBottomStart="10dp"
+                app:boxCornerRadiusTopEnd="10dp"
+                app:boxCornerRadiusTopStart="10dp"
+                app:errorEnabled="true"
+                app:endIconMode="password_toggle"
+                app:startIconDrawable="@drawable/c01_c02_c03_c04_password_lock"
+                android:visibility="gone">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/c03_newPass"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textPassword"
+                    android:textColor="?android:attr/textColorPrimary" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/c03_editTextConfirmPasswordLayout"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:hint="@string/c03_confirmPass"
+                android:textColorHint="?android:attr/textColorPrimary"
+                app:boxCornerRadiusBottomEnd="10dp"
+                app:boxCornerRadiusBottomStart="10dp"
+                app:boxCornerRadiusTopEnd="10dp"
+                app:boxCornerRadiusTopStart="10dp"
+                app:errorEnabled="true"
+                app:endIconMode="password_toggle"
+                app:startIconDrawable="@drawable/c01_c02_c03_c04_password_lock"
+                android:visibility="gone">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/c03_ConfirmPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:inputType="textPassword"
+                    android:textColor="?android:attr/textColorPrimary"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <Button
+                android:id="@+id/c03_buttonChangePass"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:paddingLeft="25dp"
+                android:paddingBottom="10dp"
+                android:paddingRight="25dp"
+                android:paddingTop="10dp"
+                android:background="@drawable/c01_c02_c03_c04_c11_four_rounded_corner"
+                android:layout_gravity="center"
+                android:text="@string/c03_change_password"
+                android:visibility="gone"/>
+
+
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>

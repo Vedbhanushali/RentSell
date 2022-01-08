@@ -9,6 +9,19 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.RentSell">
+        <activity android:name=".C31_C33_Payment"></activity>
+        <activity android:name=".C32" />
+        <activity android:name=".C21" />
+        <activity android:name=".C31" />
+        <activity android:name=".C13" />
+        <activity android:name=".C12" />
+        <activity android:name=".C04_cp" />
+        <activity android:name=".C11_C12_C13_AppBar_Navgation" />
+        <activity android:name=".C11" />
+        <activity android:name=".C04" />
+        <activity android:name=".C03" />
+        <activity android:name=".C02" />
+        <activity android:name=".C01" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

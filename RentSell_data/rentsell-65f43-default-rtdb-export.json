@@ -1,0 +1,1212 @@
+{
+  "RentSell" : {
+    "c_advertise" : [ {
+      "aid" : "1",
+      "amount" : "500",
+      "date_time" : "2021-10-24 00:00:00",
+      "due_time" : "2021-11-24",
+      "pid" : "4"
+    }, {
+      "aid" : "4",
+      "amount" : "100",
+      "date_time" : "2021-10-24 00:00:00",
+      "due_time" : "2021-11-24",
+      "pid" : "3"
+    }, {
+      "aid" : "5",
+      "amount" : "500",
+      "date_time" : "2021-10-24 00:00:00",
+      "due_time" : "2021-11-24",
+      "pid" : "6"
+    }, {
+      "aid" : "6",
+      "amount" : "100",
+      "date_time" : "2021-10-24 00:00:00",
+      "due_time" : "2021-09-24",
+      "pid" : "9"
+    }, {
+      "aid" : "7",
+      "amount" : "100",
+      "date_time" : "2021-10-24 00:00:00",
+      "due_time" : "2021-11-24",
+      "pid" : "3"
+    }, {
+      "aid" : "8",
+      "amount" : "100",
+      "date_time" : "2021-10-24 00:00:00",
+      "due_time" : "2021-11-24",
+      "pid" : "11"
+    }, {
+      "aid" : "9",
+      "amount" : "100",
+      "date_time" : "2021-10-24 00:00:00",
+      "due_time" : "2021-11-24",
+      "pid" : "11"
+    }, {
+      "aid" : "10",
+      "amount" : "100",
+      "date_time" : "2021-10-25 00:00:00",
+      "due_time" : "2021-11-25",
+      "pid" : "3"
+    } ],
+    "c_profile" : [ {
+      "cid" : "1",
+      "email" : "gautamzalavadiya205@gmail.com",
+      "login_type" : "E",
+      "name" : "Gautamxy",
+      "password" : "qwerty",
+      "phone" : "9512502625",
+      "status" : "A"
+    }, {
+      "cid" : "12",
+      "login_type" : "P",
+      "name" : "ved123",
+      "password" : "abc@!#123",
+      "phone" : "9797974561",
+      "status" : "A"
+    }, {
+      "cid" : "24",
+      "email" : "sraddop@gmail.com",
+      "login_type" : "E",
+      "name" : "raj ss",
+      "password" : "Google",
+      "status" : "A"
+    }, {
+      "cid" : "28",
+      "email" : "anaghan@gmail.com",
+      "login_type" : "E",
+      "name" : "Rohan",
+      "password" : "asdf!@#123",
+      "status" : "A"
+    }, {
+      "cid" : "29",
+      "login_type" : "P",
+      "name" : "Raj",
+      "password" : "raj@2602",
+      "phone" : "6355476308",
+      "status" : "A"
+    }, {
+      "cid" : "30",
+      "login_type" : "P",
+      "name" : "Ronak",
+      "password" : "asdf!@123",
+      "phone" : "7979774561",
+      "status" : "A"
+    }, {
+      "cid" : "31",
+      "login_type" : "P",
+      "name" : "Ved",
+      "password" : "Asdf!@#1234",
+      "phone" : "1234567890",
+      "status" : "A"
+    }, {
+      "cid" : "32",
+      "email" : "19ce005@gmail.com",
+      "login_type" : "E",
+      "name" : "Ved",
+      "password" : "asdf!@#123",
+      "status" : "A"
+    }, {
+      "cid" : "34",
+      "email" : "anaghananshul0@gmail.com",
+      "login_type" : "G",
+      "name" : "LuckyPikachu",
+      "password" : "Google",
+      "status" : "A"
+    }, {
+      "cid" : "35",
+      "email" : "vedbhanushali0@gmail.com",
+      "login_type" : "G",
+      "name" : "Ved Bhanushali",
+      "password" : "Google",
+      "status" : "A"
+    }, {
+      "cid" : "36",
+      "email" : "rdodiya2601@gmail.com",
+      "login_type" : "G",
+      "name" : "Raj Dodiya",
+      "password" : "Google",
+      "phone" : "6355476308",
+      "status" : "A"
+    }, {
+      "cid" : "37",
+      "login_type" : "P",
+      "name" : "vedtest",
+      "password" : "asdf!@#123",
+      "phone" : "9797974560",
+      "status" : "A"
+    }, {
+      "cid" : "38",
+      "login_type" : "P",
+      "name" : "vedtest",
+      "password" : "asdf!@#123",
+      "phone" : "9797974562",
+      "status" : "A"
+    }, {
+      "cid" : "39",
+      "login_type" : "P",
+      "name" : "vedtest",
+      "password" : "asdf!@#123",
+      "phone" : "9797974565",
+      "status" : "A"
+    }, {
+      "cid" : "40",
+      "login_type" : "P",
+      "name" : "vedtest",
+      "password" : "asdf!@#123",
+      "phone" : "9797974566",
+      "status" : "A"
+    }, {
+      "cid" : "41",
+      "email" : "raj@gmail.com",
+      "login_type" : "P",
+      "name" : "Raj",
+      "password" : "Raj@1234",
+      "phone" : "9889984561",
+      "status" : "A"
+    }, {
+      "cid" : "42",
+      "email" : "rdodiya2600@gmail.com",
+      "login_type" : "E",
+      "name" : "Rahul",
+      "password" : "Raj@12345",
+      "phone" : "9888999870",
+      "status" : "A"
+    }, {
+      "cid" : "43",
+      "email" : "rohan@gmail.com",
+      "login_type" : "E",
+      "name" : "Rohan Patel",
+      "password" : "Rohan@12234",
+      "status" : "A"
+    }, {
+      "cid" : "44",
+      "email" : "rohanq@gmail.com",
+      "login_type" : "E",
+      "name" : "Rohan Patel",
+      "password" : "Rohan@12234",
+      "status" : "A"
+    } ],
+    "c_property" : [ {
+      "address" : "BLock 55,Gokuldham Society,Mumbai\r\n",
+      "amount" : "10000",
+      "cid" : "1",
+      "date" : "2021-10-21",
+      "description" : "Good Condition",
+      "detail" : "1:4|2:4|3:1|4:1|",
+      "latitude" : "19.0759837",
+      "longitude" : "72.8776559",
+      "name" : "Gautaum_Residency",
+      "owner_name" : "Gautam",
+      "owner_number" : "",
+      "pid" : "3",
+      "property_status" : "pending",
+      "rent_sell" : "S",
+      "tid" : "1",
+      "timestamp" : "2021-11-04 11:02:45"
+    }, {
+      "address" : "\r\nSafal Seventy, Vikram Nagar, Ahmedabad",
+      "amount" : "4000000",
+      "cid" : "34",
+      "date" : "2021-10-22",
+      "description" : "3 bhk furnished flat available on sale in good and maintain society by seldiya group. very well know and mastor in bodakdev area for making good society. flat is good with furnished and also having balcony in hall area.",
+      "detail" : "18:3|19:3|20:1|21:1|22:2",
+      "latitude" : "23.022499",
+      "longitude" : "72.571404",
+      "name" : "Jay Residence",
+      "owner_name" : "Jay",
+      "pid" : "4",
+      "property_status" : "pending",
+      "rent_sell" : "S",
+      "tid" : "9",
+      "timestamp" : "2021-10-31 09:11:55"
+    }, {
+      "address" : "temp address",
+      "amount" : "500",
+      "cid" : "1",
+      "date" : "2021-10-24",
+      "description" : "temp description",
+      "detail" : "15 : 50 | 28 : 50 | ",
+      "latitude" : "10.000000",
+      "longitude" : "10.000000",
+      "name" : "Raj Residence",
+      "owner_name" : "Raj",
+      "owner_number" : "9797974561",
+      "pid" : "6",
+      "property_status" : "pending",
+      "rent_sell" : "R",
+      "tid" : "5",
+      "timestamp" : "2021-11-02 07:05:03"
+    }, {
+      "address" : "temp address",
+      "amount" : "50000",
+      "cid" : "1",
+      "date" : "2021-10-24",
+      "description" : "temp description",
+      "detail" : "16 : 50 | 17 : 50 | ",
+      "latitude" : "10.000000",
+      "longitude" : "10.000000",
+      "name" : "Ved residency",
+      "owner_name" : "Ved",
+      "owner_number" : "9797974561",
+      "pid" : "7",
+      "property_status" : "pending",
+      "rent_sell" : "S",
+      "tid" : "6",
+      "timestamp" : "2021-10-31 09:15:07"
+    }, {
+      "address" : "temp address",
+      "amount" : "5000",
+      "cid" : "1",
+      "date" : "2021-10-24",
+      "description" : "temp description",
+      "detail" : "15 : 50 | 28 : 50 | ",
+      "latitude" : "10.000000",
+      "longitude" : "10.000000",
+      "name" : "Raj Relocation",
+      "owner_name" : "Raj",
+      "owner_number" : "9797564580",
+      "pid" : "8",
+      "property_status" : "pending",
+      "rent_sell" : "S",
+      "tid" : "5",
+      "timestamp" : "2021-10-31 09:12:29"
+    }, {
+      "address" : "temp address",
+      "amount" : "50000",
+      "cid" : "1",
+      "date" : "2021-10-24",
+      "description" : "temp description",
+      "detail" : "3 : 1 | 4 : 1 | 5 : 6 | ",
+      "latitude" : "10.000000",
+      "longitude" : "10.000000",
+      "name" : "Sanskruti residence",
+      "owner_name" : "shyam",
+      "owner_number" : "7979796541",
+      "pid" : "9",
+      "property_status" : "pending",
+      "rent_sell" : "S",
+      "tid" : "1",
+      "timestamp" : "2021-10-31 09:12:40"
+    }, {
+      "address" : "77, revenue street, Ram relocation site",
+      "amount" : "2000",
+      "cid" : "1",
+      "date" : "2021-10-24",
+      "description" : "South side facing",
+      "detail" : "8 : 1 | 9 : 1 | 10 : 1 | ",
+      "latitude" : "10.000000",
+      "longitude" : "10.000000",
+      "name" : "Ram society",
+      "owner_name" : "Rohan",
+      "owner_number" : "9963524110",
+      "pid" : "11",
+      "property_status" : "pending",
+      "rent_sell" : "R",
+      "tid" : "2",
+      "timestamp" : "2021-10-31 09:12:52"
+    }, {
+      "address" : "Ramnagar,Rajkot",
+      "amount" : "500000",
+      "cid" : "36",
+      "date" : "2021-10-24",
+      "description" : "Good\n",
+      "detail" : "3 : 1 | 4 : 1 | 5 : 2 | ",
+      "latitude" : "10.000000",
+      "longitude" : "10.000000",
+      "name" : "Maruti",
+      "owner_name" : "Raj",
+      "owner_number" : "6355476308",
+      "pid" : "12",
+      "property_status" : "pending",
+      "rent_sell" : "R",
+      "tid" : "1",
+      "timestamp" : "2021-10-31 09:14:55"
+    }, {
+      "address" : "Gondal Road,Rajkot",
+      "amount" : "50000",
+      "cid" : "36",
+      "date" : "2021-10-28",
+      "description" : "Good",
+      "detail" : "8 : 1 | 9 : 1 | 10 : 2 | ",
+      "latitude" : "22.303900",
+      "longitude" : "70.802200",
+      "name" : "Jai Ambe",
+      "owner_name" : "VEd Patel",
+      "owner_number" : "6357631235",
+      "pid" : "13",
+      "property_status" : "pending",
+      "rent_sell" : "S",
+      "tid" : "2",
+      "timestamp" : "2021-10-31 09:15:55"
+    }, {
+      "address" : "64, Avenue Paris Society,Relocation Site,373745,Bhuj,Gujarat",
+      "amount" : "2000",
+      "cid" : "1",
+      "date" : "2021-10-30",
+      "description" : "Fertile Land",
+      "detail" : "15 : 50 | 28 : 50 | 33 : 5000 | 41 : 5 | ",
+      "latitude" : "22.303900",
+      "longitude" : "70.802200",
+      "name" : "Paris society",
+      "owner_name" : "paresh",
+      "owner_number" : "7788994561",
+      "pid" : "14",
+      "property_status" : "sold",
+      "rent_sell" : "R",
+      "tid" : "5",
+      "timestamp" : "2021-10-30 15:13:06"
+    }, {
+      "address" : "15, Avenue South Gate, Hanuman Nagar, 979745, Bhuj, Gujarat",
+      "amount" : "3000",
+      "cid" : "1",
+      "date" : "2021-10-30",
+      "description" : "Long Land",
+      "detail" : "15 : 300 | 28 : 20 | 33 : 5000 | 41 : 6 | ",
+      "latitude" : "22.303900",
+      "longitude" : "70.802200",
+      "name" : "Hanuman Society",
+      "owner_name" : "Ram",
+      "owner_number" : "8989564512",
+      "pid" : "15",
+      "property_status" : "sold",
+      "rent_sell" : "R",
+      "tid" : "5",
+      "timestamp" : "2021-10-30 15:47:22"
+    }, {
+      "address" : "15, Avenue Relocation Site, Hanuman Nagar, 979745, Bhuj, Gujarat",
+      "amount" : "50000",
+      "cid" : "1",
+      "date" : "2021-10-30",
+      "description" : "Long plot",
+      "detail" : "16 : 600 | 17 : 420 | 34 : 5000 | 42 : 5 | ",
+      "latitude" : "22.303900",
+      "longitude" : "70.802200",
+      "name" : "Hanuman Society",
+      "owner_name" : "Ram",
+      "owner_number" : "5656122345",
+      "pid" : "16",
+      "property_status" : "sold",
+      "rent_sell" : "S",
+      "tid" : "6",
+      "timestamp" : "2021-10-30 15:50:35"
+    }, {
+      "address" : "15, Ram Socirty, Test Line 2, 979745, Ahemdabad, Gujarat",
+      "amount" : "6000",
+      "cid" : "1",
+      "date" : "2021-10-30",
+      "description" : "Fertile soil",
+      "detail" : "15 : 689 | 28 : 542 | 33 : 65000 | 41 : 5 | ",
+      "latitude" : "22.303900",
+      "longitude" : "70.802200",
+      "name" : "Test 1",
+      "owner_name" : "Ram",
+      "owner_number" : "7878898945",
+      "pid" : "17",
+      "property_status" : "sold",
+      "rent_sell" : "R",
+      "tid" : "5",
+      "timestamp" : "2021-10-30 15:58:31"
+    }, {
+      "address" : "Spain Society Street 1,, Relcation Site, 456123, Ahemdabad, Gujarat",
+      "amount" : "50000",
+      "cid" : "1",
+      "date" : "2021-10-30",
+      "description" : "Great House",
+      "detail" : "3 : 1 | 4 : 1 | 5 : 1 | 29 : 56000 | 37 : 6 | ",
+      "latitude" : "22.303900",
+      "longitude" : "70.802200",
+      "name" : "Spain Residence",
+      "owner_name" : "Robin",
+      "owner_number" : "1234567562",
+      "pid" : "18",
+      "property_status" : "sold",
+      "rent_sell" : "S",
+      "tid" : "1",
+      "timestamp" : "2021-10-30 16:06:48"
+    }, {
+      "address" : "Test Add 1, Test Add 2, 123456, Ahemdabad, Gujarat",
+      "amount" : "4566",
+      "cid" : "1",
+      "date" : "2021-10-30",
+      "description" : "asdfgfsd",
+      "detail" : "15 : 2543 | 28 : 4503 | 33 : 522300 | 41 : 2 | ",
+      "latitude" : "22.303900",
+      "longitude" : "70.802200",
+      "name" : "qwer",
+      "owner_name" : "asdf",
+      "owner_number" : "7897895261",
+      "pid" : "19",
+      "property_status" : "sold",
+      "rent_sell" : "R",
+      "tid" : "5",
+      "timestamp" : "2021-10-30 16:09:46"
+    }, {
+      "address" : "Asdf, Fdsa, 789456, Bhuj, Gujarat",
+      "amount" : "1234",
+      "cid" : "1",
+      "date" : "2021-10-30",
+      "description" : "dsadf",
+      "detail" : "15 : 368 | 28 : 530 | 33 : 56200 | 41 : 5 | ",
+      "latitude" : "10.000000",
+      "longitude" : "10.000000",
+      "name" : "asdf",
+      "owner_name" : "asdf",
+      "owner_number" : "1234",
+      "pid" : "20",
+      "property_status" : "sold",
+      "rent_sell" : "R",
+      "tid" : "5",
+      "timestamp" : "2021-10-30 17:02:55"
+    }, {
+      "address" : "Test 1, Test 2, Bhuj, 789456, Gujarat",
+      "amount" : "45611",
+      "cid" : "1",
+      "date" : "2021-10-30",
+      "description" : "asdf",
+      "detail" : "32 : 4560 | 40 : 2 | ",
+      "latitude" : "10.000000",
+      "longitude" : "10.000000",
+      "name" : "test 2",
+      "owner_name" : "test 1",
+      "owner_number" : "123532",
+      "pid" : "21",
+      "property_status" : "sold",
+      "rent_sell" : "R",
+      "tid" : "4",
+      "timestamp" : "2021-10-30 17:07:32"
+    }, {
+      "address" : "Qwer, Rewq, Ahemdabad, 123455, Gujarat",
+      "amount" : "1234",
+      "cid" : "1",
+      "date" : "2021-10-30",
+      "description" : "qwer",
+      "detail" : "15 : 32 | 28 : 34 | 33 : 1234 | 41 : 2 | ",
+      "latitude" : "10.000000",
+      "longitude" : "10.000000",
+      "name" : "asdf",
+      "owner_name" : "asdf",
+      "owner_number" : "12340",
+      "pid" : "22",
+      "property_status" : "sold",
+      "rent_sell" : "R",
+      "tid" : "5",
+      "timestamp" : "2021-10-30 17:15:56"
+    }, {
+      "address" : "21,Dhara Soc",
+      "amount" : "500000",
+      "cid" : "42",
+      "date" : "2021-10-31",
+      "description" : "Good\n",
+      "detail" : "3 : 1 | 4 : 2 | 5 : 3 | ",
+      "latitude" : "22.303900",
+      "longitude" : "70.802200",
+      "name" : "De",
+      "owner_name" : "Dhairya",
+      "owner_number" : "9924341250",
+      "pid" : "23",
+      "property_status" : "sold",
+      "rent_sell" : "R",
+      "tid" : "1",
+      "timestamp" : "2021-10-31 04:07:17"
+    }, {
+      "address" : "Fds, Fdsa, Bhuj, 789456, Gujarat",
+      "amount" : "1234",
+      "cid" : "1",
+      "date" : "2021-10-31",
+      "description" : "asdf",
+      "detail" : "15 : 3 | 28 : 2 | 33 : 23 | 41 : 3 | ",
+      "latitude" : "10.000000",
+      "longitude" : "10.000000",
+      "name" : "asdf",
+      "owner_name" : "sdf",
+      "owner_number" : "1234",
+      "pid" : "24",
+      "property_status" : "sold",
+      "rent_sell" : "R",
+      "tid" : "5",
+      "timestamp" : "2021-10-31 09:37:53"
+    }, {
+      "address" : "1 , 2, Ahemdabad, 789456, Gujarat",
+      "amount" : "20000",
+      "cid" : "1",
+      "date" : "2021-10-31",
+      "description" : "asdf",
+      "detail" : "15 : 43 | 28 : 12 | 33 : 1234 | 41 : 4 | ",
+      "latitude" : "10.000000",
+      "longitude" : "10.000000",
+      "name" : "test 50",
+      "owner_name" : "ved",
+      "owner_number" : "1234",
+      "pid" : "25",
+      "property_status" : "sold",
+      "rent_sell" : "R",
+      "tid" : "5",
+      "timestamp" : "2021-10-31 09:43:33"
+    }, {
+      "address" : "Gfds, Sdfg, Ahemdabad, 123456, Gujarat",
+      "amount" : "456",
+      "cid" : "1",
+      "date" : "2021-10-31",
+      "description" : "sdfg",
+      "detail" : "15 : 5 | 28 : 5 | 33 : 56 | 41 : 5 | ",
+      "latitude" : "23.022505",
+      "longitude" : "72.5713621",
+      "name" : "Munmun",
+      "owner_name" : "asdf",
+      "owner_number" : "789",
+      "pid" : "26",
+      "property_status" : "sold",
+      "rent_sell" : "R",
+      "tid" : "5",
+      "timestamp" : "2021-10-31 10:07:52"
+    }, {
+      "address" : "Fds, Asd, Surat, 123456, Gujarat",
+      "amount" : "1234",
+      "cid" : "1",
+      "date" : "2021-10-31",
+      "description" : "asd",
+      "detail" : "15 : 3 | 28 : 3 | 33 : 23 | 41 : 4 | ",
+      "latitude" : "21.170240099999997",
+      "longitude" : "72.83106070000001",
+      "name" : "Surat test",
+      "owner_name" : "asd",
+      "owner_number" : "132",
+      "pid" : "27",
+      "property_status" : "pending",
+      "rent_sell" : "S",
+      "tid" : "5",
+      "timestamp" : "2021-10-31 10:13:52"
+    }, {
+      "address" : "Fds, Asd, Rajkot, 123456, Gujarat",
+      "amount" : "7894",
+      "cid" : "1",
+      "date" : "2021-10-31",
+      "description" : "sadf",
+      "detail" : "16 : 3 | 17 : 3 | 34 : 1 | 42 : 2 | ",
+      "latitude" : "22.3038945",
+      "longitude" : "70.80215989999999",
+      "name" : "Rajkot test",
+      "owner_name" : "asdf",
+      "owner_number" : "23",
+      "pid" : "28",
+      "property_status" : "pending",
+      "rent_sell" : "S",
+      "tid" : "6",
+      "timestamp" : "2021-10-31 10:15:30"
+    }, {
+      "address" : "Dfs, Asd, Surat, 123456, Gujarat",
+      "amount" : "12",
+      "cid" : "1",
+      "date" : "2021-10-31",
+      "description" : "asds",
+      "detail" : "15 : 2 | 28 : 2 | 33 : 2 | 41 : 22 | ",
+      "latitude" : "21.170240099999997",
+      "longitude" : "72.83106070000001",
+      "name" : "Surat test again",
+      "owner_name" : "asdf",
+      "owner_number" : "12",
+      "pid" : "29",
+      "property_status" : "pending",
+      "rent_sell" : "S",
+      "tid" : "5",
+      "timestamp" : "2021-10-31 10:19:25"
+    }, {
+      "address" : "Fdsf, Sdg, Bhuj, 123, Gujarat",
+      "amount" : "234",
+      "cid" : "1",
+      "date" : "2021-10-31",
+      "description" : "asdf",
+      "detail" : "15 : 4 | 28 : 4 | 33 : 2 | 41 : 3 | ",
+      "latitude" : "23.241999699999997",
+      "longitude" : "69.6669324",
+      "name" : "Bhuj test",
+      "owner_name" : "asdf",
+      "owner_number" : "12345",
+      "pid" : "30",
+      "property_status" : "pending",
+      "rent_sell" : "S",
+      "tid" : "5",
+      "timestamp" : "2021-10-31 10:20:35"
+    }, {
+      "address" : "64 Avenue Shyam Society, Near Ram Mandir, Bhuj, 789456, Gujarat",
+      "amount" : "2333",
+      "cid" : "1",
+      "date" : "2021-10-31",
+      "description" : "Best Home ever",
+      "detail" : "3 : 1 | 4 : 1 | 5 : 1 | 29 : 300000 | 37 : 5 | ",
+      "latitude" : "23.241999699999997",
+      "longitude" : "69.6669324",
+      "name" : "Shyam society",
+      "owner_name" : "Ved Bhanushali",
+      "owner_number" : "7878898945",
+      "pid" : "31",
+      "property_status" : "pending",
+      "rent_sell" : "S",
+      "tid" : "1",
+      "timestamp" : "2021-10-31 10:36:48"
+    }, {
+      "address" : "45, Avenue Raj Society, Near Ram Mandir, Valsad, 789456, Gujarat",
+      "amount" : "23000",
+      "cid" : "1",
+      "date" : "2021-10-31",
+      "description" : "wert",
+      "detail" : "15 : 123 | 28 : 12 | 33 : 7800 | 41 : 2 | ",
+      "latitude" : "22.3039",
+      "longitude" : "70.8022",
+      "name" : "Raj society",
+      "owner_name" : "Raj",
+      "owner_number" : "7894561230",
+      "pid" : "32",
+      "property_status" : "pending",
+      "rent_sell" : "S",
+      "tid" : "5",
+      "timestamp" : "2021-10-31 11:05:33"
+    }, {
+      "address" : "Asdf, Fdsa, Rajkot, 123456, Gujarat",
+      "amount" : "1234",
+      "cid" : "1",
+      "date" : "2021-10-31",
+      "description" : "asdf",
+      "detail" : "15 : 32 | 28 : 32 | 33 : 12 | 41 : 23 | ",
+      "latitude" : "22.3039",
+      "longitude" : "70.8022",
+      "name" : "uniq",
+      "owner_name" : "asdf",
+      "owner_number" : "1234123456",
+      "pid" : "33",
+      "property_status" : "pending",
+      "rent_sell" : "R",
+      "tid" : "5",
+      "timestamp" : "2021-10-31 11:09:31"
+    }, {
+      "address" : "Asdf, Fds, Petlad, 123456, Gujarat",
+      "amount" : "123",
+      "cid" : "1",
+      "date" : "2021-10-31",
+      "description" : "asdf",
+      "detail" : "15 : 5 | 28 : 4 | 33 : 2 | 41 : 3 | ",
+      "latitude" : "22.3039",
+      "longitude" : "70.8022",
+      "name" : "Valsad test",
+      "owner_name" : "Raj",
+      "owner_number" : "789456",
+      "pid" : "34",
+      "property_status" : "pending",
+      "rent_sell" : "R",
+      "tid" : "5",
+      "timestamp" : "2021-10-31 11:17:04"
+    }, {
+      "address" : "Fds, Fdsas, Surat, 123456, Gujarat",
+      "amount" : "456123",
+      "cid" : "1",
+      "date" : "2021-10-31",
+      "description" : "asdf",
+      "detail" : "15 : 2 | 28 : 2 | 33 : 2 | 41 : 2 | ",
+      "latitude" : "22.3039",
+      "longitude" : "70.8022",
+      "name" : "surat test",
+      "owner_name" : "asdf",
+      "owner_number" : "1234",
+      "pid" : "35",
+      "property_status" : "pending",
+      "rent_sell" : "R",
+      "tid" : "5",
+      "timestamp" : "2021-10-31 11:18:09"
+    }, {
+      "address" : "Dfsa, Gdsa, Bhuj, 123456, Gujarat",
+      "amount" : "1234",
+      "cid" : "1",
+      "date" : "2021-10-31",
+      "description" : "asdf",
+      "detail" : "16 : 1 | 17 : 2 | 34 : 1 | 42 : 1 | ",
+      "latitude" : "22.3039",
+      "longitude" : "70.8022",
+      "name" : "Bhuj test",
+      "owner_name" : "Ved",
+      "owner_number" : "12345",
+      "pid" : "36",
+      "property_status" : "pending",
+      "rent_sell" : "R",
+      "tid" : "6",
+      "timestamp" : "2021-10-31 11:23:12"
+    }, {
+      "address" : "Fds, Dsa, Surat, 123456, Gujarat",
+      "amount" : "1234",
+      "cid" : "1",
+      "date" : "2021-10-31",
+      "description" : "asdf",
+      "detail" : "16 : 3 | 17 : 32 | 34 : 2 | 42 : 32 | ",
+      "latitude" : "22.3039",
+      "longitude" : "70.8022",
+      "name" : "Ahemdabad",
+      "owner_name" : "asdf",
+      "owner_number" : "1234",
+      "pid" : "37",
+      "property_status" : "pending",
+      "rent_sell" : "R",
+      "tid" : "6",
+      "timestamp" : "2021-10-31 11:27:44"
+    }, {
+      "address" : "Qwer, Rewq, Surat, 123456, Gujarat",
+      "amount" : "12345",
+      "cid" : "1",
+      "date" : "2021-10-31",
+      "description" : "dqqwer",
+      "detail" : "16 : 1 | 17 : 1 | 34 : 1 | 42 : 1 | ",
+      "latitude" : "22.3039",
+      "longitude" : "70.8022",
+      "name" : "Surat test again",
+      "owner_name" : "asdf",
+      "owner_number" : "123454",
+      "pid" : "38",
+      "property_status" : "pending",
+      "rent_sell" : "R",
+      "tid" : "6",
+      "timestamp" : "2021-10-31 11:29:07"
+    }, {
+      "address" : "Fdsa, Asdf, Bhuj, 132456, Gujarat",
+      "amount" : "1234",
+      "cid" : "1",
+      "date" : "2021-10-31",
+      "description" : "asdf",
+      "detail" : "15 : 1 | 28 : 1 | 33 : 1 | 41 : 1 | ",
+      "latitude" : "23.241999699999997",
+      "longitude" : "69.6669324",
+      "name" : "Bhuj test",
+      "owner_name" : "Ved",
+      "owner_number" : "134",
+      "pid" : "39",
+      "property_status" : "pending",
+      "rent_sell" : "R",
+      "tid" : "5",
+      "timestamp" : "2021-10-31 11:37:20"
+    }, {
+      "address" : "Rewq, Qwer, Ahemdabad, 123456, Gujarat",
+      "amount" : "1234",
+      "cid" : "1",
+      "date" : "2021-10-31",
+      "description" : "qewr",
+      "detail" : "16 : 4 | 17 : 5 | 34 : 2 | 42 : 3 | ",
+      "latitude" : "23.022505",
+      "longitude" : "72.5713621",
+      "name" : "Ahmedabad Raj ved",
+      "owner_name" : "asdf",
+      "owner_number" : "1234",
+      "pid" : "40",
+      "property_status" : "pending",
+      "rent_sell" : "R",
+      "tid" : "6",
+      "timestamp" : "2021-10-31 11:39:26"
+    }, {
+      "address" : "Sdf,frfrf, Valsad, 123456, Gujarat",
+      "amount" : "12350",
+      "cid" : "1",
+      "date" : "2021-10-31",
+      "description" : "Better condition.",
+      "detail" : "16: 500|17: 300 |34: 2000 |42: 4 |",
+      "latitude" : "22.3071588",
+      "longitude" : "73.1812187",
+      "name" : "Property3",
+      "owner_name" : "Praveen",
+      "owner_number" : "1234456455",
+      "pid" : "41",
+      "property_status" : "sold",
+      "rent_sell" : "S",
+      "tid" : "6",
+      "timestamp" : "2021-11-04 12:58:27"
+    }, {
+      "address" : "Fdsa, Asdf, Valsad, 123456, Gujarat",
+      "amount" : "1234",
+      "cid" : "1",
+      "date" : "2021-10-31",
+      "description" : "qwer",
+      "detail" : "16 : 3 | 17 : 4 | 34 : 2 | 42 : 2 | ",
+      "latitude" : "20.5992349",
+      "longitude" : "72.9342451",
+      "name" : "Valsad test",
+      "owner_name" : "ved",
+      "owner_number" : "1234",
+      "pid" : "42",
+      "property_status" : "pending",
+      "rent_sell" : "R",
+      "tid" : "6",
+      "timestamp" : "2021-10-31 11:44:07"
+    }, {
+      "address" : "Ramnagar, , Rajkot, 2311, Rajkot, Gujarat",
+      "amount" : "505000",
+      "cid" : "1",
+      "date" : "2021-10-31",
+      "description" : "ood",
+      "detail" : "3 : 1 | 4 : 1 | 5 : 1 | 29 : 65454 | 37 : 3 | ",
+      "latitude" : "22.3039",
+      "longitude" : "70.8022",
+      "name" : "Krishna",
+      "owner_name" : "Kushal",
+      "owner_number" : "4561234561",
+      "pid" : "45",
+      "property_status" : "pending",
+      "rent_sell" : "S",
+      "tid" : "1",
+      "timestamp" : "2021-10-31 18:42:08"
+    }, {
+      "address" : "Ramnagar-1, Gondal Road, Rajkot, 360004, Rajkot, Guujarat",
+      "amount" : "10000",
+      "cid" : "1",
+      "date" : "2021-11-11",
+      "description" : "good apartment",
+      "detail" : "8 : 1 | 9 : 1 | 10 : 1 | 30 : 1000 | 38 : 9 | ",
+      "latitude" : "22.2665796",
+      "longitude" : "70.79847149999999",
+      "name" : "RajTest1",
+      "owner_name" : "Raj",
+      "owner_number" : "7894456123",
+      "pid" : "46",
+      "property_status" : "pending",
+      "rent_sell" : "R",
+      "tid" : "2",
+      "timestamp" : "2021-11-11 18:14:04"
+    }, {
+      "address" : "EME Circle,, Fatehgunj, Vadodara, 390002, Vadodara, Gujarat",
+      "amount" : "1200",
+      "cid" : "1",
+      "date" : "2021-11-11",
+      "description" : "Good ",
+      "detail" : "3 : 1 | 4 : 1 | 5 : 1 | 29 : 1000 | 37 : 7 | ",
+      "latitude" : "22.3253783",
+      "longitude" : "73.1931718",
+      "name" : "Raj Test2",
+      "owner_name" : "Raj2",
+      "owner_number" : "4657894561",
+      "pid" : "47",
+      "property_status" : "pending",
+      "rent_sell" : "R",
+      "tid" : "1",
+      "timestamp" : "2021-11-11 18:25:01"
+    }, {
+      "address" : "Ramnagar-6, Gondal Road, Rajkot, 360004, Rajkot, Gujarat",
+      "amount" : "2000",
+      "cid" : "1",
+      "date" : "2021-11-12",
+      "description" : "Good",
+      "detail" : "3:2|4:2|5:2|29:2|37:2|",
+      "latitude" : "22.270714899999998",
+      "longitude" : "70.7968109",
+      "name" : "RajTest3",
+      "owner_name" : "RajT",
+      "owner_number" : "794561388",
+      "pid" : "48",
+      "property_status" : "pending",
+      "rent_sell" : "R",
+      "tid" : "1",
+      "timestamp" : "2021-11-12 10:45:44"
+    } ],
+    "o_advertise_charges" : [ {
+      "acid" : "1",
+      "percentage" : "1",
+      "tid" : "1"
+    } ],
+    "o_parameter" : [ {
+      "customer_access" : "N",
+      "module" : "advertisement",
+      "name" : "chargeAmountType",
+      "options" : "P|D",
+      "parameter_id" : "5",
+      "remark" : "A refers to amount and p is for percentage wise amount, for calculation of chargable  amount",
+      "value" : "P"
+    }, {
+      "customer_access" : "N",
+      "module" : "advertisement",
+      "name" : "chargeAmountValue",
+      "options" : "Any integer number",
+      "parameter_id" : "7",
+      "remark" : "It is chargeable amount which applies on every chargeAmountOn name",
+      "value" : "500"
+    }, {
+      "customer_access" : "N",
+      "module" : "razorPay",
+      "name" : "razorPayKey",
+      "options" : "rzp_test_29G3qbYTVUteZj | rzp_live_Pj9WUXwvUF3xOx",
+      "parameter_id" : "11",
+      "remark" : "Razor pay payment key",
+      "value" : "rzp_test_bOJ6F1e2bLMdxi"
+    }, {
+      "customer_access" : "N",
+      "module" : "support",
+      "name" : "phoneNo",
+      "options" : "Phone number",
+      "parameter_id" : "12",
+      "remark" : "Support phone no",
+      "value" : "9512502625, 7226097736"
+    }, {
+      "customer_access" : "N",
+      "module" : "support",
+      "name" : "email",
+      "options" : "Email",
+      "parameter_id" : "13",
+      "remark" : "Support email",
+      "value" : "mdshopapp@gmail.com"
+    }, {
+      "customer_access" : "N",
+      "module" : "footerString",
+      "name" : "copyrightString",
+      "options" : "Copyright String",
+      "parameter_id" : "14",
+      "remark" : "Copyright String",
+      "value" : "© 2021 Gautam Zalavadiya All R"
+    }, {
+      "customer_access" : "N",
+      "module" : "advertisement",
+      "name" : "advertisementTime",
+      "options" : "days | month | year",
+      "parameter_id" : "15",
+      "remark" : "no of days we allow users to use app after duedate",
+      "value" : "15 days"
+    }, {
+      "customer_access" : "N",
+      "module" : "Filter",
+      "name" : "valueFrom",
+      "options" : "0,10,20....",
+      "parameter_id" : "17",
+      "remark" : "Filter price range starting from this price",
+      "value" : "0"
+    }, {
+      "customer_access" : "N",
+      "module" : "Filter",
+      "name" : "valueTo",
+      "options" : "100000,40000,....",
+      "parameter_id" : "18",
+      "remark" : "Filter price ending upto ",
+      "value" : "1000000.0"
+    }, {
+      "customer_access" : "N",
+      "module" : "Filter",
+      "name" : "stepSize",
+      "options" : "100,1000,10000",
+      "parameter_id" : "19",
+      "remark" : "Step size for filter price range",
+      "value" : "10000"
+    } ],
+    "o_property_details" : [ {
+      "did" : "1",
+      "dname" : "Bedroom",
+      "tid" : "1",
+      "unit" : ""
+    }, {
+      "did" : "2",
+      "dname" : "Bathroom",
+      "tid" : "1",
+      "unit" : ""
+    }, {
+      "did" : "3",
+      "dname" : "Kitchen",
+      "tid" : "1",
+      "unit" : ""
+    }, {
+      "did" : "4",
+      "dname" : "Hall",
+      "tid" : "1",
+      "unit" : ""
+    }, {
+      "did" : "5",
+      "dname" : "Balcony",
+      "tid" : "1",
+      "unit" : ""
+    }, {
+      "did" : "6",
+      "dname" : "Bedroom",
+      "tid" : "2",
+      "unit" : ""
+    }, {
+      "did" : "7",
+      "dname" : "Bathroom",
+      "tid" : "2",
+      "unit" : ""
+    }, {
+      "did" : "8",
+      "dname" : "Kitchen",
+      "tid" : "2",
+      "unit" : ""
+    }, {
+      "did" : "9",
+      "dname" : "Hall",
+      "tid" : "2",
+      "unit" : ""
+    }, {
+      "did" : "10",
+      "dname" : "Balcony",
+      "tid" : "2",
+      "unit" : ""
+    }, {
+      "did" : "11",
+      "dname" : "Bathroom",
+      "tid" : "3",
+      "unit" : ""
+    }, {
+      "did" : "12",
+      "dname" : "Balcony",
+      "tid" : "3",
+      "unit" : ""
+    }, {
+      "did" : "13",
+      "dname" : "Bathroom",
+      "tid" : "4",
+      "unit" : "Number"
+    }, {
+      "did" : "15",
+      "dname" : "Width",
+      "tid" : "5",
+      "unit" : "m"
+    }, {
+      "did" : "16",
+      "dname" : "Length",
+      "tid" : "6",
+      "unit" : "m"
+    }, {
+      "did" : "17",
+      "dname" : "Width",
+      "tid" : "6",
+      "unit" : "m"
+    }, {
+      "did" : "18",
+      "dname" : "Bathroom",
+      "tid" : "9",
+      "unit" : ""
+    }, {
+      "did" : "19",
+      "dname" : "Bedroom",
+      "tid" : "9",
+      "unit" : ""
+    }, {
+      "did" : "20",
+      "dname" : "Kitchen",
+      "tid" : "9",
+      "unit" : ""
+    }, {
+      "did" : "21",
+      "dname" : "Hall",
+      "tid" : "9",
+      "unit" : ""
+    }, {
+      "did" : "22",
+      "dname" : "Balcony",
+      "tid" : "9",
+      "unit" : ""
+    }, {
+      "did" : "23",
+      "dname" : "Bedroom",
+      "tid" : "8",
+      "unit" : ""
+    }, {
+      "did" : "24",
+      "dname" : "Bathroom",
+      "tid" : "8",
+      "unit" : ""
+    }, {
+      "did" : "25",
+      "dname" : "Kitchen",
+      "tid" : "8",
+      "unit" : ""
+    }, {
+      "did" : "26",
+      "dname" : "Hall",
+      "tid" : "8",
+      "unit" : ""
+    }, {
+      "did" : "27",
+      "dname" : "Balcony",
+      "tid" : "8",
+      "unit" : ""
+    }, {
+      "did" : "28",
+      "dname" : "Length",
+      "tid" : "5",
+      "unit" : "m"
+    }, {
+      "did" : "29",
+      "dname" : "Area",
+      "tid" : "1",
+      "unit" : "sqft"
+    }, {
+      "did" : "30",
+      "dname" : "Area",
+      "tid" : "2",
+      "unit" : "sqft"
+    }, {
+      "did" : "31",
+      "dname" : "Area",
+      "tid" : "3",
+      "unit" : "sqft"
+    }, {
+      "did" : "32",
+      "dname" : "Area",
+      "tid" : "4",
+      "unit" : "sqft"
+    }, {
+      "did" : "33",
+      "dname" : "Area",
+      "tid" : "5",
+      "unit" : "sqft"
+    }, {
+      "did" : "34",
+      "dname" : "Area",
+      "tid" : "6",
+      "unit" : "sqft"
+    }, {
+      "did" : "35",
+      "dname" : "Area",
+      "tid" : "9",
+      "unit" : "sqft"
+    }, {
+      "did" : "36",
+      "dname" : "Area",
+      "tid" : "8",
+      "unit" : "sqft"
+    }, {
+      "did" : "37",
+      "dname" : "Age",
+      "tid" : "1",
+      "unit" : "years"
+    }, {
+      "did" : "38",
+      "dname" : "Age",
+      "tid" : "2",
+      "unit" : "years"
+    }, {
+      "did" : "39",
+      "dname" : "Age",
+      "tid" : "3",
+      "unit" : "years"
+    }, {
+      "did" : "40",
+      "dname" : "Age",
+      "tid" : "4",
+      "unit" : "years"
+    }, {
+      "did" : "41",
+      "dname" : "Age",
+      "tid" : "5",
+      "unit" : "years"
+    }, {
+      "did" : "42",
+      "dname" : "Age",
+      "tid" : "6",
+      "unit" : "years"
+    }, {
+      "did" : "43",
+      "dname" : "Age",
+      "tid" : "9",
+      "unit" : "years"
+    }, {
+      "did" : "44",
+      "dname" : "Age",
+      "tid" : "8",
+      "unit" : "years"
+    } ],
+    "o_support" : [ {
+      "email" : "roydodia@gmail.com",
+      "message" : "good service",
+      "subject" : "feedback"
+    } ]
+  }
+}

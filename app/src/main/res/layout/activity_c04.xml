@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".C04">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <include
+            android:id="@+id/c01_navbar"
+            layout="@layout/c01_c02_c03_c04_navigation_bar"
+            android:layout_alignParentTop="true"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"/>
+        <ImageView
+            android:id="@+id/c04_forgetPassImg"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_below="@id/c01_navbar"
+            android:background="@color/white"
+            android:scaleType="centerCrop"
+            android:src="@drawable/c04_forgot_password" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/c04_forgetPassImg"
+            android:orientation="vertical"
+            android:layout_margin="10dp"
+            android:background="@drawable/c11_four_rounded_corner2">
+
+            <TextView
+                android:id="@+id/c04_forget_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/c04_forgetPassImg"
+                android:gravity="center"
+                android:text="@string/c04_Forget_password"
+                android:textColor="?android:attr/textColorPrimary"
+                android:textSize="40dp"
+                android:textStyle="bold"
+                android:layout_margin="10dp"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/c04_editTextNameLayout"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="35dp"
+                android:hint="@string/c04_name"
+                android:textColorHint="?android:attr/textColorPrimary"
+                app:boxCornerRadiusBottomEnd="10dp"
+                app:boxCornerRadiusBottomStart="10dp"
+                app:boxCornerRadiusTopEnd="10dp"
+                app:boxCornerRadiusTopStart="10dp"
+                app:endIconMode="clear_text"
+                app:errorEnabled="true"
+                app:startIconDrawable="@drawable/c01_c02_c03_c04_email">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/c04_editTextName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:textColor="?android:attr/textColorPrimary" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <!--            <com.google.android.material.textfield.TextInputLayout-->
+            <!--                android:id="@+id/c04_editTextNameLayout"-->
+            <!--                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_marginLeft="15dp"-->
+            <!--                android:layout_marginTop="10dp"-->
+            <!--                android:layout_marginRight="15dp"-->
+            <!--                android:hint="@string/c04_name"-->
+            <!--                android:textColorHint="?android:attr/textColorPrimary"-->
+            <!--                app:boxCornerRadiusBottomEnd="10dp"-->
+            <!--                app:boxCornerRadiusBottomStart="10dp"-->
+            <!--                app:boxCornerRadiusTopEnd="10dp"-->
+            <!--                app:boxCornerRadiusTopStart="10dp"-->
+            <!--                app:startIconDrawable="@drawable/c01_c02_c03_c04_email">-->
+
+            <!--                <com.google.android.material.textfield.TextInputEditText-->
+            <!--                    android:id="@+id/c04_editTextName"-->
+            <!--                    android:layout_width="match_parent"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:ems="10"-->
+            <!--                    android:inputType="textPersonName"-->
+            <!--                    android:textColor="?android:attr/textColorPrimary" />-->
+
+            <!--            </com.google.android.material.textfield.TextInputLayout>-->
+
+            <Button
+                android:id="@+id/c04_ButtonSendOTP"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="35dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/c01_c02_c03_c04_c11_four_rounded_corner"
+                android:elevation="20dp"
+                android:text="@string/c04_send_OTP" />
+
+            <!--            <com.google.android.material.textfield.TextInputLayout-->
+            <!--                android:id="@+id/c04_textOTPLayout"-->
+            <!--                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_marginLeft="35dp"-->
+            <!--                android:layout_marginTop="10dp"-->
+            <!--                android:layout_marginRight="35dp"-->
+            <!--                android:hint="@string/c04_OTP"-->
+            <!--                android:textColorHint="?android:attr/textColorPrimary"-->
+            <!--                app:boxCornerRadiusBottomEnd="10dp"-->
+            <!--                app:boxCornerRadiusBottomStart="10dp"-->
+            <!--                app:boxCornerRadiusTopEnd="10dp"-->
+            <!--                app:boxCornerRadiusTopStart="10dp"-->
+            <!--                app:errorEnabled="true"-->
+            <!--                app:endIconMode="password_toggle"-->
+            <!--                app:startIconDrawable="@drawable/c01_c02_c03_c04_password_lock"-->
+            <!--                android:visibility="gone">-->
+
+            <!--                <com.google.android.material.textfield.TextInputEditText-->
+            <!--                    android:id="@+id/c04_editOTP"-->
+            <!--                    android:layout_width="match_parent"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:ems="10"-->
+            <!--                    android:inputType="numberPassword"-->
+            <!--                    android:textColor="?android:attr/textColorPrimary"-->
+            <!--                    android:layout_gravity="center" />-->
+
+            <!--            </com.google.android.material.textfield.TextInputLayout>-->
+            <TextView
+                android:id="@+id/c04_otp_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="35dp"
+                android:text="@string/c04_enter_OTP"
+                android:textSize="15sp"
+                android:visibility="gone" />
+
+            <com.chaos.view.PinView
+                android:id="@+id/c04_pinView"
+                style="@style/PinWidget.PinView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/c04_otp_text"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="35dp"
+                android:cursorVisible="true"
+                android:gravity="center"
+                android:inputType="numberPassword"
+                android:visibility="gone"
+                app:cursorColor="?android:attr/textColorPrimaryInverse"
+                app:hideLineWhenFilled="true"
+                app:itemCount="6"
+                app:itemHeight="45dp"
+                app:itemRadius="10dp"
+                app:itemWidth="45dp"
+                app:lineColor="?android:attr/textColorPrimary"
+                app:lineWidth="2dp" />
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ProgressBar
+                    android:id="@+id/progressBar"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center"
+                    android:visibility="gone"/>
+                <Button
+                    android:id="@+id/c04_buttonVeriftyOTP"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="35dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/c01_c02_c03_c04_c11_four_rounded_corner"
+                    android:elevation="20dp"
+                    android:text="@string/c04_verify_OTP"
+                    android:visibility="gone" />
+
+            </FrameLayout>
+
+
+
+            <!--                <Button-->
+            <!--                    android:id="@+id/c04_buttonVeriftyOTP"-->
+            <!--                    android:layout_margin="20dp"-->
+            <!--                    android:textSize="20sp"-->
+            <!--                    android:paddingLeft="25dp"-->
+            <!--                    android:paddingBottom="10dp"-->
+            <!--                    android:paddingRight="25dp"-->
+            <!--                    android:paddingTop="10dp"-->
+            <!--                    android:background="@drawable/c01_c02_c03_c04_c11_four_rounded_corner"-->
+            <!--                    android:layout_gravity="center"-->
+            <!--                    android:layout_width="wrap_content"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:text="Verify Otp"-->
+            <!--                    android:visibility="visible"/>-->
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

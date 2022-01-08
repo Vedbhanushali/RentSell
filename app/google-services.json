@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "539182725687",
+    "project_id": "rentsell-65f43",
+    "storage_bucket": "rentsell-65f43.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:539182725687:android:02a102e5bc0adcc9171db2",
+        "android_client_info": {
+          "package_name": "com.example.rentsell"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "539182725687-95sce3pgkcat5q3r5assoc1a1s19rkhi.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.rentsell",
+            "certificate_hash": "24ae31ac12b6bf3bfff26b82c2c5680014d6c77f"
+          }
+        },
+        {
+          "client_id": "539182725687-779rs633od00i21ofvvinc06994gtscc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAgpOkcFRxifEldqF4Al0tmjSRg3yaXGg0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "539182725687-779rs633od00i21ofvvinc06994gtscc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

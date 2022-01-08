@@ -1,0 +1,281 @@
+<!--<androidx.drawerlayout.widget.DrawerLayout-->
+<!--    xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    xmlns:tools="http://schemas.android.com/tools"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    android:id="@+id/c11_drawer"-->
+<!--    tools:openDrawer="left"-->
+<!--    android:fitsSystemWindows="true"-->
+<!--    tools:context=".C11">-->
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:orientation="vertical">-->
+<!--        <com.google.android.material.appbar.AppBarLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            app:liftOnScroll="true">-->
+<!--            <com.google.android.material.appbar.MaterialToolbar-->
+<!--                android:id="@+id/c11_topAppBar"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="?attr/actionBarSize"-->
+<!--                android:backgroundTint="@color/blue_500"-->
+<!--                app:title="@string/navbar_title"-->
+<!--                app:menu="@menu/c11_search"-->
+<!--                app:navigationIcon="@drawable/c11_menu"-->
+<!--                style="@style/Widget.MaterialComponents.Toolbar.Primary"-->
+<!--            />-->
+
+<!--        </com.google.android.material.appbar.AppBarLayout>-->
+
+
+<!--        &lt;!&ndash; Note: A RecyclerView can also be used &ndash;&gt;-->
+<!--        &lt;!&ndash;    <androidx.core.widget.NestedScrollView&ndash;&gt;-->
+<!--        &lt;!&ndash;    android:layout_width="match_parent"&ndash;&gt;-->
+<!--        &lt;!&ndash;    android:layout_height="match_parent"&ndash;&gt;-->
+<!--        &lt;!&ndash;    app:layout_behavior="@string/appbar_scrolling_view_behavior">&ndash;&gt;-->
+
+<!--        &lt;!&ndash;    &lt;!&ndash; Scrollable content &ndash;&gt;&ndash;&gt;-->
+
+<!--        &lt;!&ndash;    </androidx.core.widget.NestedScrollView>&ndash;&gt;-->
+
+
+<!--    </LinearLayout>-->
+<!--    <com.google.android.material.navigation.NavigationView-->
+<!--        android:id="@+id/c11_NavigationViewMenu"-->
+<!--        android:layout_width="250dp"-->
+<!--        android:layout_height="match_parent"-->
+<!--        app:itemIconTint="?android:attr/textColorPrimary"-->
+<!--        android:layout_marginTop="0dp"-->
+<!--        app:headerLayout="@layout/c11_nav_header"-->
+<!--        app:menu="@menu/c11_navbar"-->
+<!--        android:background="@drawable/c11_four_rounded_corner2"-->
+<!--        android:layout_gravity="start"-->
+<!--        android:visibility="visible" />-->
+<!--</androidx.drawerlayout.widget.DrawerLayout>-->
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".C11_C12_C13_AppBar_Navgation"
+    android:id="@+id/c11_dashboard_coordinator">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/progressAnimation"
+        android:visibility="gone">
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/animationView"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+
+            app:lottie_rawRes="@raw/progress_animation"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/noInternetAnimation"
+        android:visibility="gone">
+        <com.airbnb.lottie.LottieAnimationView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:lottie_rawRes="@raw/nointernet"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/c11_constrainLayout">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop= "55dp">
+
+            <!--                    <LinearLayout-->
+            <!--                        android:layout_width="match_parent"-->
+            <!--                        android:layout_height="wrap_content"-->
+            <!--                        android:orientation="horizontal"-->
+            <!--                        android:id="@+id/c112_linearLayout">-->
+            <!--                        &lt;!&ndash;                    <com.google.android.material.textfield.TextInputLayout&ndash;&gt;-->
+            <!--                        &lt;!&ndash;                        android:id="@+id/c11_editTextNameLayout"&ndash;&gt;-->
+            <!--                        &lt;!&ndash;                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"&ndash;&gt;-->
+            <!--                        &lt;!&ndash;                        android:layout_width="0dp"&ndash;&gt;-->
+            <!--                        &lt;!&ndash;                        android:layout_height="wrap_content"&ndash;&gt;-->
+            <!--                        &lt;!&ndash;                        android:layout_weight="4"&ndash;&gt;-->
+            <!--                        &lt;!&ndash;                        android:hint="search"&ndash;&gt;-->
+            <!--                        &lt;!&ndash;                        android:textColorHint="?android:attr/textColorPrimary"&ndash;&gt;-->
+            <!--                        &lt;!&ndash;                        app:boxCornerRadiusBottomEnd="10dp"&ndash;&gt;-->
+            <!--                        &lt;!&ndash;                        app:boxCornerRadiusBottomStart="10dp"&ndash;&gt;-->
+            <!--                        &lt;!&ndash;                        app:boxCornerRadiusTopEnd="10dp"&ndash;&gt;-->
+            <!--                        &lt;!&ndash;                        app:boxCornerRadiusTopStart="10dp"&ndash;&gt;-->
+            <!--                        &lt;!&ndash;                        app:endIconContentDescription="@string/app_name"&ndash;&gt;-->
+            <!--                        &lt;!&ndash;                        app:startIconDrawable="@drawable/ic_baseline_search_24"&ndash;&gt;-->
+            <!--                        &lt;!&ndash;                        app:endIconDrawable="@drawable/ic_baseline_search_24">&ndash;&gt;-->
+
+            <!--                        &lt;!&ndash;                        <com.google.android.material.textfield.TextInputEditText&ndash;&gt;-->
+            <!--                        &lt;!&ndash;                            android:id="@+id/c01_editTextName"&ndash;&gt;-->
+            <!--                        &lt;!&ndash;                            android:layout_width="match_parent"&ndash;&gt;-->
+            <!--                        &lt;!&ndash;                            android:layout_height="wrap_content"&ndash;&gt;-->
+            <!--                        &lt;!&ndash;                            android:ems="10"&ndash;&gt;-->
+            <!--                        &lt;!&ndash;                            android:inputType="textPersonName"&ndash;&gt;-->
+            <!--                        &lt;!&ndash;                            android:textColor="?android:attr/textColorPrimary"&ndash;&gt;-->
+            <!--                        &lt;!&ndash;                            android:textSize="20sp" />&ndash;&gt;-->
+
+            <!--                        &lt;!&ndash;                    </com.google.android.material.textfield.TextInputLayout>&ndash;&gt;-->
+
+            <!--&lt;!&ndash;                        <com.google.android.material.textfield.TextInputLayout&ndash;&gt;-->
+            <!--&lt;!&ndash;                            android:id="@+id/c02_editTextEmailLayout"&ndash;&gt;-->
+            <!--&lt;!&ndash;                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"&ndash;&gt;-->
+            <!--&lt;!&ndash;                            android:layout_width="0dp"&ndash;&gt;-->
+            <!--&lt;!&ndash;                            android:layout_weight="4"&ndash;&gt;-->
+            <!--&lt;!&ndash;                            android:layout_height="wrap_content"&ndash;&gt;-->
+            <!--&lt;!&ndash;                            android:hint="@string/c112_search"&ndash;&gt;-->
+            <!--&lt;!&ndash;                            android:textColorHint="?android:attr/textColorPrimary"&ndash;&gt;-->
+            <!--&lt;!&ndash;                            app:boxCornerRadiusBottomEnd="10dp"&ndash;&gt;-->
+            <!--&lt;!&ndash;                            app:boxCornerRadiusBottomStart="10dp"&ndash;&gt;-->
+            <!--&lt;!&ndash;                            app:boxCornerRadiusTopEnd="10dp"&ndash;&gt;-->
+            <!--&lt;!&ndash;                            app:boxCornerRadiusTopStart="10dp"&ndash;&gt;-->
+            <!--&lt;!&ndash;                            app:startIconDrawable="@drawable/c112f_c113f_search"&ndash;&gt;-->
+            <!--&lt;!&ndash;                            app:endIconMode="clear_text">&ndash;&gt;-->
+
+            <!--&lt;!&ndash;                            <com.google.android.material.textfield.TextInputEditText&ndash;&gt;-->
+            <!--&lt;!&ndash;                                android:id="@+id/c02_editTextEmail"&ndash;&gt;-->
+            <!--&lt;!&ndash;                                android:layout_width="match_parent"&ndash;&gt;-->
+            <!--&lt;!&ndash;                                android:layout_height="wrap_content"&ndash;&gt;-->
+            <!--&lt;!&ndash;                                android:ems="10"&ndash;&gt;-->
+            <!--&lt;!&ndash;                                android:inputType="text"&ndash;&gt;-->
+            <!--&lt;!&ndash;                                android:textColor="?android:attr/textColorPrimary"&ndash;&gt;-->
+            <!--&lt;!&ndash;                                android:textSize="15sp" />&ndash;&gt;-->
+
+            <!--&lt;!&ndash;                        </com.google.android.material.textfield.TextInputLayout>&ndash;&gt;-->
+            <!--                        <EditText-->
+            <!--                            android:id="@+id/c112_editTextSearch"-->
+            <!--                            android:layout_width="0dp"-->
+            <!--                            android:layout_height="wrap_content"-->
+            <!--                            android:layout_weight="4"-->
+            <!--                            android:layout_margin="10dp"-->
+            <!--                            android:textSize="15dp"-->
+            <!--                            android:padding="10dp"-->
+            <!--                            android:paddingLeft="10dp"-->
+            <!--                            tools:hint="@string/c112_search"-->
+            <!--                            android:textColor="@color/blue_200"-->
+            <!--                            android:background="@drawable/c11_four_rounded_corner2"-->
+            <!--                            android:drawableEnd="@drawable/c112f_c113f_search"/>-->
+            <!--                        <ImageButton-->
+            <!--                            android:id="@+id/c112_imageButtonFilter"-->
+            <!--                            android:layout_width="wrap_content"-->
+            <!--                            android:layout_height="wrap_content"-->
+            <!--                            android:layout_margin="5dp"-->
+            <!--                            android:backgroundTint="@color/material_on_primary_disabled"-->
+            <!--                            android:padding="10dp"-->
+            <!--                            android:src="@drawable/c112f_c113f_filter_list"/>-->
+
+            <!--                    </LinearLayout>-->
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/c11_tabLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true">
+
+
+                <com.google.android.material.tabs.TabItem
+                    android:id="@+id/c11_rentTAb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/c11f1_c11f2_rent" />
+                <com.google.android.material.tabs.TabItem
+                    android:id="@+id/c11_buySellTab"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/c11f1_c11f2_buy_sell" />
+
+            </com.google.android.material.tabs.TabLayout>
+
+            <!-- Note: A RecyclerView can also be used -->
+
+
+            <!--        <FrameLayout-->
+            <!--            android:id="@+id/c11_fragmentContainer"-->
+            <!--            android:layout_width="match_parent"-->
+            <!--            android:layout_height="wrap_content"-->
+            <!--            android:layout_below="@id/c112_tabLayout"-->
+            <!--            android:layout_alignParentEnd="true"-->
+            <!--            android:layout_marginTop="2dp"-->
+            <!--            android:layout_marginEnd="0dp" />-->
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/c11_viewPager"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/c11_tabLayout"
+                android:layout_above="@id/c11_linearLayout"
+                android:layout_marginTop="2dp"
+                android:layout_marginEnd="0dp"
+                tools:ignore="NotSibling" />
+            <!--                <LinearLayout-->
+            <!--                    android:id="@+id/c11_linearLayout"-->
+            <!--                    android:layout_width="match_parent"-->
+            <!--                    android:layout_height="40dp"-->
+            <!--                    android:orientation="horizontal"-->
+            <!--                    android:gravity="center"-->
+            <!--                    android:layout_alignParentBottom="true">-->
+
+            <!--                    <TextView-->
+            <!--                        android:id="@+id/c11_sortBtn"-->
+            <!--                        android:layout_width="0dp"-->
+            <!--                        android:layout_weight="1"-->
+            <!--                        android:layout_height="wrap_content"-->
+            <!--                        android:text="@string/c11_sort_sort"-->
+            <!--                        android:padding="10dp"-->
+            <!--                        android:textAllCaps="true"-->
+            <!--                        android:layout_gravity="center"-->
+            <!--                        android:gravity="center"-->
+            <!--                        android:background="@drawable/c11_square_border"-->
+            <!--                        android:drawableLeft="@drawable/ic_baseline_sort_24"/>-->
+            <!--                    <TextView-->
+            <!--                        android:id="@+id/c11_filterBtn"-->
+            <!--                        android:layout_width="0dp"-->
+            <!--                        android:layout_weight="1"-->
+            <!--                        android:layout_height="wrap_content"-->
+            <!--                        android:text="@string/c11_filter_filter"-->
+            <!--                        android:padding="10dp"-->
+            <!--                        android:textAllCaps="true"-->
+            <!--                        android:layout_gravity="center"-->
+            <!--                        android:gravity="center"-->
+            <!--                        android:drawableStart="@drawable/c11f1_c11f2_filter_list"-->
+            <!--                      android:background="@drawable/c11_square_border"  />-->
+
+            <!--                </LinearLayout>-->
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/c112_floatingActionButtonAdd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/c11_add"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginBottom="50dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:backgroundTint="#29B6F6"/>
+        </RelativeLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
