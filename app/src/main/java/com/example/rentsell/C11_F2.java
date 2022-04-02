@@ -25,6 +25,14 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.Query;
+
+import java.io.IOException;
 import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.Statement;
@@ -51,6 +59,7 @@ public class C11_F2 extends Fragment {
     ArrayList<C11F1_C11F2_M> c11_f2_horizontalPropertyList2=new ArrayList<>();
     ArrayList<C11F1_C11F2_M> c11_f2_verticalPropertyList2=new ArrayList<>();
 
+    DatabaseReference dbreference;
     SharedPreferences sortSharedPreferences, sellSharedPreference;;
     TextView recommendForU,popularForU;
 
@@ -458,44 +467,110 @@ public class C11_F2 extends Fragment {
                 }
             }
         }, 1000, 3000);
-        if(sortSharedPreferences.contains(sortId)){
-            sortData(sortSharedPreferences.getInt(sortId,R.id.c11_sort_newest));
-        }
+//        if(sortSharedPreferences.contains(sortId)){
+//            sortData(sortSharedPreferences.getInt(sortId,R.id.c11_sort_newest));
+//        }
+
     }
     private void getData() {
-//        propertyList.add(new C11F1_C11F2_M("Apartment","10000","Ahmedabad"))
-//getting data of properties from database
-//        try {
-//            String connectionResult;
-//            C00_connectionHelper connectionHelper = new C00_connectionHelper();
-//            connect = connectionHelper.connectionClass();
-//            if (connect != null) {
-//                String query;
-//
-//                query = "SELECT * FROM `c_property` where rent_sell='S' AND property_status='pending'";
-//                Statement st = connect.createStatement();
-//                ResultSet rs = st.executeQuery(query);
-//
-//                //call showData function to show data in horizontal recyclerView
-//                c11_f2_verticalPropertyList=showData(rs);
-//                c11_f2_verticalPropertyList2=c11_f2_verticalPropertyList;
-//
-//                String query2 = "SELECT * FROM `c_property` WHERE exists (SELECT 1 FROM `c_advertise` WHERE c_property.pid=pid) AND rent_sell='S' AND property_status='pending'";
-//                Statement st2 = connect.createStatement();
-//                ResultSet rs2 = st2.executeQuery(query2);
-//
-//                c11_f2_horizontalPropertyList=showData(rs2);
-//                c11_f2_horizontalPropertyList2=c11_f2_horizontalPropertyList;
-//
-//                showData2();
-//                connectionResult = "Successful fetched";
-//            } else {
-//                connectionResult = "Check connection";
-//            }
-//            connect.close();
-//        } catch (Exception ex) {
-//            Log.e("Error in", ex.getMessage());
-//        }
+
+        dbreference = FirebaseDatabase.getInstance().getReference("RentSell").child("c_property");
+        Query query = dbreference.child("cid");
+        dbreference.get().addOnCompleteListener(new OnCompleteListener<DataSnapshot>() {
+            @Override
+            public void onComplete(@NonNull Task<DataSnapshot> task) {
+                if (!task.isSuccessful()) {
+                    Log.e("Task", "Task incomplete");
+                } else {
+                    ArrayList<C11F1_C11F2_M> propertyList = new ArrayList<>();
+
+                    String address= null, amount = null, cid= null, date= null, description= null, detail= null, latitude= null, longitude = null, name= null, owner_name= null, owner_number= null, pid = null,
+                            property_status= null, tid= null, timestamp= null, rent_sell= null;
+                    for (DataSnapshot ds : task.getResult().getChildren()) {
+                        Log.i("value", ds.toString());
+                        for (DataSnapshot dsp : ds.getChildren()) {
+                            switch (dsp.getKey()) {
+                                case "address":
+                                    address = (String) dsp.getValue();
+                                case "amount":
+                                    amount = (String) dsp.getValue();
+                                case "cid":
+                                    cid = (String) dsp.getValue();
+                                case "date":
+                                    date = (String) dsp.getValue();
+                                case "description":
+                                    description = (String) dsp.getValue();
+                                case "detail":
+                                    detail = (String) dsp.getValue();
+                                case "latitude":
+                                    latitude = (String) dsp.getValue();
+                                case "longitude":
+                                    longitude = (String) dsp.getValue();
+                                case "name":
+                                    name = (String) dsp.getValue();
+                                case "owner_name":
+                                    owner_name = (String) dsp.getValue();
+                                case "owner_number":
+                                    owner_number = (String) dsp.getValue();
+                                case "pid":
+                                    pid = (String) dsp.getValue();
+                                case "property_status":
+                                    property_status = (String) dsp.getValue();
+                                case "rent_sell":
+                                    if(dsp.getValue().toString().contains("S")){
+                                        rent_sell = "Sell";
+                                    }else {
+                                        rent_sell = "Rent";
+                                    }
+
+                                case "tid":
+                                    tid = (String) dsp.getValue();
+                                case "timestamp":
+                                    timestamp = (String) dsp.getValue();
+                                default:
+                                    Log.e("switch","default");
+                            }
+
+                        }
+                        //get locality from latitude and longitude
+                        Geocoder geocoder = new Geocoder(getContext(), Locale.getDefault());
+                        List<Address> addresses = null;
+                        try {
+                            addresses = geocoder.getFromLocation(Double.parseDouble(latitude), Double.parseDouble(longitude), 1);
+                        } catch (IOException e) {
+                            e.printStackTrace();
+                        }
+//                        Log.i("address", addresses.toString());
+                        String location ="";
+                        location=addresses.get(0).getLocality();
+
+                        final String[] property_type = {null};
+                        DB_Reference db_reference=new DB_Reference();
+                        String finalName = name;
+                        String finalRent_sell = rent_sell;
+                        String finalTid = tid;
+                        String finalPid = pid;
+                        String finalTimestamp = timestamp;
+                        String finalAmount = amount;
+                        String finalLocation = location;
+                        db_reference.getType(tid, new DB_Reference.typeCallback() {
+                            @Override
+                            public void onCallback(String type) {
+                                String imgURL="https://firebasestorage.googleapis.com/v0/b/rentsell-65f43.appspot.com/o/Property%2F1_propertyName%2Fhome1.jfif?alt=media&token=02753750-cf9d-4387-b0ed-279019a35d30";
+                                if(!finalRent_sell.contains("Rent")){
+                                    propertyList.add(new C11F1_C11F2_M(finalName, finalAmount, finalLocation, type, finalRent_sell, finalTid, finalPid, finalTimestamp, imgURL));
+                                }
+                            }
+                        });
+                    }
+                    c11_f2_horizontalPropertyList=propertyList;
+                    c11_f2_verticalPropertyList2=propertyList;
+                    showData2();
+
+
+                }
+            }
+        });
 
     }
 
@@ -503,65 +578,9 @@ public class C11_F2 extends Fragment {
 
     @Override
     public void onCreateOptionsMenu(@NonNull Menu menu, @NonNull MenuInflater inflater) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-//        inflater.inflate(R.menu.c11_search, menu);
-//        // Associate searchable configuration with the SearchView
-//        final MenuItem searchItem = menu.findItem(R.id.c11_search_menu);
-//        MenuItemCompat.setShowAsAction(searchItem, MenuItemCompat.SHOW_AS_ACTION_ALWAYS | MenuItemCompat.SHOW_AS_ACTION_COLLAPSE_ACTION_VIEW);
-//        final SearchView searchView = (SearchView) MenuItemCompat.getActionView(searchItem);
-//        searchView.setOnQueryTextListener(this);
 
         super.onCreateOptionsMenu(menu, inflater);
     }
-//it was for search view
-//    @Override
-//    public boolean onMenuItemActionExpand(MenuItem item) {
-//        return true;
-//    }
-//
-//    @Override
-//    public boolean onMenuItemActionCollapse(MenuItem item) {
-//        f2_adapterHorizontal.setFilter(c11_f2_propertyList);
-//        f2_adapterVertical.setFilter(c11_f2_propertyList);
-//        return true;
-//    }
-//
-//    @Override
-//    public boolean onQueryTextSubmit(String query) {
-//        final ArrayList<C11F1_C11F2_M> filteredNewsList = new ArrayList<>();
-//        for (C11F1_C11F2_M model : c11_f2_propertyList) {
-//            final String modelLocation = model.getLocation().toLowerCase();
-//            if (modelLocation.contains(query)) {
-//                filteredNewsList.add(model);
-//            }
-//        }
-//        f2_adapterHorizontal.setFilter(filteredNewsList);
-//        f2_adapterVertical.setFilter(filteredNewsList);
-//        return true;
-//    }
-//
-//    @Override
-//    public boolean onQueryTextChange(String newText) {
-//        newText = newText.toLowerCase();
-//        final ArrayList<C11F1_C11F2_M> filteredNewsList = new ArrayList<>();
-//        if (newText == null || newText.trim().isEmpty()) {
-//            filteredNewsList.addAll(c11_f2_propertyList);
-//            f2_adapterHorizontal.setFilter(filteredNewsList);
-//            f2_adapterVertical.setFilter(filteredNewsList);
-//            return false;
-//        }
-//        else {
-//            for (C11F1_C11F2_M model : c11_f2_propertyList) {
-//                final String modelLocation = model.getLocation().toLowerCase();
-//                if (modelLocation.contains(newText)) {
-//                    filteredNewsList.add(model);
-//                }
-//            }
-//            f2_adapterHorizontal.setFilter(filteredNewsList);
-//            f2_adapterVertical.setFilter(filteredNewsList);
-//            return true;
-//        }
-//   }
 
     private void filter(String text) {
         //new array list that will hold the filtered data

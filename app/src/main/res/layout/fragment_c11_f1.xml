@@ -96,7 +96,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_margin="10dp"
-                            android:text="Popular for you"
+                            android:text="Featured"
                             android:textColor="?android:attr/textColorPrimary"
                             android:textSize="20sp"
                             android:textStyle="bold" />
@@ -156,7 +156,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_margin="10dp"
-                        android:text="Recommend for you"
+                        android:text="Recommend "
                         android:textColor="?android:attr/textColorPrimary"
                         android:textSize="20sp"
                         android:textStyle="bold" />
