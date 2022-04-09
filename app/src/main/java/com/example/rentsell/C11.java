@@ -20,6 +20,7 @@ import android.widget.Toast;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.tabs.TabLayout;
 
+import static com.example.rentsell.C01.EMAIL;
 import static com.example.rentsell.C01.MyPREFERENCES;
 import static com.example.rentsell.C01.NAME;
 import static com.example.rentsell.C01.USERID;
@@ -33,8 +34,8 @@ public class C11 extends C11_C12_C13_AppBar_Navgation {
 
     FloatingActionButton floatingActionButtonAdd;
     SharedPreferences sharedPreferences;
-    //    TextView userName;
-//    View headerView;
+        TextView Name,Username;
+    View headerView;
     TabLayout tabLayout;
     ViewPager viewPager;
     TextView filterBtn,sortBtn;
@@ -54,8 +55,9 @@ public class C11 extends C11_C12_C13_AppBar_Navgation {
 
         //initialize layout variables
         floatingActionButtonAdd=(FloatingActionButton)findViewById(R.id.c112_floatingActionButtonAdd);
-//        headerView=navigationView.getHeaderView(0);
-//        userName=(TextView)headerView.findViewById(R.id.c11_txtUserName);
+        headerView=navigationView.getHeaderView(0);
+        Username=(TextView)headerView.findViewById(R.id.c11_txtUserName);
+        Name =(TextView)headerView.findViewById(R.id.c11_txtName);
 
         tabLayout=(TabLayout)findViewById(R.id.c11_tabLayout);
         viewPager=(ViewPager)findViewById(R.id.c11_viewPager);
@@ -115,11 +117,12 @@ public class C11 extends C11_C12_C13_AppBar_Navgation {
 
             navigationView.setCheckedItem(R.id.c11_navbarHome);
 //        //if user exist then set it name
-//        if (sharedPreferences.contains(USERID)) {
-//            userName.setText(sharedPreferences.getString(NAME,""));
-//            Toast.makeText(this, sharedPreferences.getString(USERID,""), Toast.LENGTH_SHORT).show();
-//        }
-//
+        if (sharedPreferences.contains(USERID)) {
+            Username.setText(sharedPreferences.getString(NAME,""));
+            Name.setText(sharedPreferences.getString(EMAIL,""));
+            Toast.makeText(this, sharedPreferences.getString(USERID,"") + sharedPreferences.getString(NAME,"") + sharedPreferences.getString(EMAIL,""), Toast.LENGTH_SHORT).show();
+        }
+
 //        filterBtn.setOnClickListener(new View.OnClickListener() {
 //            @Override
 //            public void onClick(View v) {
@@ -142,6 +145,7 @@ public class C11 extends C11_C12_C13_AppBar_Navgation {
                 public void onClick(View view) {
                     if (sharedPreferences.contains(NAME)) {
                         userName.setText(sharedPreferences.getString(NAME, ""));
+
                         //Toast.makeText(this, sharedPreferences.getString(NAME,""), Toast.LENGTH_SHORT).show();
                         Intent intent = new Intent(getApplicationContext(), C32.class);
                         intent.putExtra("USERID", sharedPreferences.getString(USERID, ""));

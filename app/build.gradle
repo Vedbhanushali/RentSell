@@ -52,9 +52,7 @@ dependencies {
     //glide library dependency  ( Glide is an Image Loader Library for Android )
     implementation 'com.github.bumptech.glide:glide:4.11.0'
     //declare Google Play services as a dependency
-//    implementation 'com.google.android.gms:play-services-auth:19.2.0'
 
-//
     implementation 'androidx.constraintlayout:constraintlayout:2.0.0-beta1'
 
     //pin view dependencies
@@ -68,14 +66,13 @@ dependencies {
     implementation 'com.synnapps:carouselview:0.1.5'
 
     implementation platform('com.google.firebase:firebase-bom:29.0.3')
-    implementation 'com.google.firebase:firebase-analytics'
-    implementation 'com.google.firebase:firebase-auth:21.0.1'
-//    implementation 'com.google.android.gms:play-services-maps:12.0.1'
-    dependencies {
-              // Declare the dependency for the Realtime Database library
+
         // When using the BoM, you don't specify versions in Firebase library dependencies
-        implementation 'com.google.firebase:firebase-database'
-    }
+        implementation 'com.google.firebase:firebase-auth'
+        implementation 'com.google.firebase:firebase-analytics'
+        implementation 'com.google.firebase:firebase-auth:21.0.1'
+//    implementation 'com.google.android.gms:play-services-maps:12.0.1'
+    implementation 'com.google.firebase:firebase-database'
 
     //razorpay dependency
     implementation 'com.razorpay:checkout:1.6.12'

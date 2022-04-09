@@ -21,6 +21,12 @@ import com.google.android.material.bottomsheet.BottomSheetDialogFragment;
 import com.google.android.material.chip.Chip;
 import com.google.android.material.chip.ChipGroup;
 import com.google.android.material.slider.RangeSlider;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.Query;
+import com.google.firebase.database.ValueEventListener;
 
 import java.sql.Connection;
 import java.sql.ResultSet;
@@ -49,6 +55,8 @@ public class C11_Filter extends BottomSheetDialogFragment {
     private filterCallback filterListener;
     public static final String sellFilterPref="sellFilterPref",rentFilterPref="rentFilterPref";
     SharedPreferences sellFilterPreference,rentFilterPreference;
+
+    DatabaseReference dbreference;
 
 
     public C11_Filter(filterCallback callback,String category){
@@ -378,6 +386,20 @@ public class C11_Filter extends BottomSheetDialogFragment {
 //        }
 //    };
     public  void  getTypesFromDatabase(){
+        dbreference = FirebaseDatabase.getInstance().getReference("RentSell").child("o_parameter");
+        Query query = dbreference.child("name");
+        query.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
+
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
+
+            }
+        });
+
 //        try {
 //            String connectionResult;
 //            C00_connectionHelper connectionHelper = new C00_connectionHelper();
@@ -404,7 +426,21 @@ public class C11_Filter extends BottomSheetDialogFragment {
 
     }
     public  void getRangeFromDatabase(){
+        dbreference = FirebaseDatabase.getInstance().getReference("RentSell").child("o_parameter");
+        Query query = dbreference.orderByChild("name").equalTo("valueFrom");
+        query.addListenerForSingleValueEvent(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                if(snapshot.exists()){
 
+                }
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
+
+            }
+        });
 //        try {
 //            String connectionResult;
 //            C00_connectionHelper connectionHelper = new C00_connectionHelper();
