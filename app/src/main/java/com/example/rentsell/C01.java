@@ -37,11 +37,6 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.Query;
 import com.google.firebase.database.ValueEventListener;
 
-import java.sql.Connection;
-import java.sql.ResultSet;
-import java.sql.Statement;
-import java.util.ArrayList;
-import java.util.concurrent.ExecutionException;
 import java.util.regex.Pattern;
 
 public class C01 extends AppCompatActivity {
@@ -307,9 +302,9 @@ public class C01 extends AppCompatActivity {
                             name=user.getDisplayName();
 
                             SharedPreferences.Editor editor = sharedpreferences.edit();
-                            editor.putString(USERID, username);
+                            editor.putString(USERID, uid);
                             editor.putString(NAME, name);
-                            editor.putString(EMAIL,"1");
+                            editor.putString(EMAIL,username);
                             editor.commit();
                             Log.i("username",uid+" , "+name+" , "+username);
                             //Toast.makeText(C01.this, userid, Toast.LENGTH_SHORT).show();
@@ -331,7 +326,7 @@ public class C01 extends AppCompatActivity {
    
 
     private  void insertData(GoogleSignInAccount acc){
-}
+    }
 
 
     private interface LoginCallback {
