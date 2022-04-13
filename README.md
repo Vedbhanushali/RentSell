@@ -15,13 +15,6 @@ well information of owner so that they can inquire them
 personally.
 
 
-**Table of Contents**
-
-[TOCM]
-
-[TOC]
-
-
 ###Screen shot of images
 
 ####login
@@ -45,7 +38,7 @@ personally.
 
 ####Forget password
 
-![login](https://github.com/rdodiya/RentSell/blob/main/screenshot/forget.png?raw=true "Title")
+![login](https://github.com/rdodiya/RentSell/blob/main/screenshots/forget.png?raw=true "Title")
 
 >forget password interface
 
@@ -53,8 +46,8 @@ personally.
 
 ####Dashboard
 
-![login](https://github.com/rdodiya/RentSell/blob/main/screenshot/dashboard_ad.png?raw=true "Title")
-![login](https://github.com/rdodiya/RentSell/blob/main/screenshot/dashboard.png?raw=true "Title")
+![login](https://github.com/rdodiya/RentSell/blob/main/screenshots/dashboard_ad.png?raw=true "Title")
+![login](https://github.com/rdodiya/RentSell/blob/main/screenshots/dashboard.png?raw=true "Title")
 
 >Dashboard interface
 
