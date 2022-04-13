@@ -15,46 +15,46 @@ well information of owner so that they can inquire them
 personally.
 
 
-###Screen shot of images
+### Screen shot of images
 
-####login
+#### login
 
 ![login](https://github.com/rdodiya/RentSell/blob/main/screenshots/login.png?raw=true "Title")
 
->login interface
+> login interface
 
-####Registration
+#### Registration
 
 ![login](https://github.com/rdodiya/RentSell/blob/main/screenshots/reg.png?raw=true "Title")
 
 >registration interface
 
-####Update profile
+#### Update profile
 
 ![login](https://github.com/rdodiya/RentSell/blob/main/screenshots/updateprofile.png?raw=true "Title")
 
->update profile interface
+> update profile interface
 
 
-####Forget password
+#### Forget password
 
 ![login](https://github.com/rdodiya/RentSell/blob/main/screenshots/forget.png?raw=true "Title")
 
->forget password interface
+> forget password interface
 
 
 
-####Dashboard
+#### Dashboard
 
 ![login](https://github.com/rdodiya/RentSell/blob/main/screenshots/dashboard_ad.png?raw=true "Title")
 ![login](https://github.com/rdodiya/RentSell/blob/main/screenshots/dashboard.png?raw=true "Title")
 
->Dashboard interface
+> Dashboard interface
 
 
 
 ----
-###Links
+### Links
 
 `clone project using this link to android studio` :
  [RentSell](https://github.com/rdodiya/RentSell.git)
@@ -62,4 +62,4 @@ personally.
 Contributors:
  [VedBhanushali](https://github.com/Vedbhanushali)  [RajDodiya](https://github.com/rdodiya)  [kevinBhuva](https://github.com/Kevinbhuva)  [AnshulAnghan](https://github.com/Anshul6654)
 
-###End
+### End
