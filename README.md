@@ -15,7 +15,7 @@ well information of owner so that they can inquire them
 personally.
 
 
-### Screen shot of images
+### Screen shot of product
 
 #### login
 
